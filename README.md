@@ -2,6 +2,13 @@
 
 This is the official repository for book Kabuki Script, a book that teaches how to make technology with Kabuki Toolkit and Script.
 
+## Quick Links
+
+* [Kabuki Script](https://github.com/CaleMcCollough/kabuki-script/wiki/01-Overview) - *Free Markdown version of the book.*
+* [Kabuki Toolkit](https://github.com/kabuki-starship/kabuki-toolkit) - *Official Kabuki Toolkit GitHub repository.*
+* [Script Specification RFC](https://github.com/kabuki-starship/script/wiki/SCRIPT-Specification-RFC)
+  - *Release for Comment for Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification.*
+
 ## Author
 
 * [Cale McCollough](https://calemccollough.github.io) <[cale.mccollough@gmail.com](mailto:cale.mccollough@gmail.com)>
