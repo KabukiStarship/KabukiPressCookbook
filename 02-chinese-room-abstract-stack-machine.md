@@ -1,6 +1,6 @@
 # 3 Chinese Room Abstract Stack Machine
 
-The Chinese Room Abstract Stack Machine (Crabs) is a virtual machine (VM) engine for creating VMs defined in the SCRIPT Specification that allows allows rooms to communicate with messages. Crabs works using an Object stack utilizing a single-function interface modeled after the A=A*B Group Automata Theorem.
+The Chinese Room Abstract Stack Machine (Crabs) is a virtual machine (VM) engine for creating VMs defined in the SCRIPT Specification that allows rooms to communicate with messages. Crabs works using an Object stack utilizing a single-function interface modeled after the A=A*B Group Automata Theorem.
 
 ## 4.2 Text Printer and Scanner
 
@@ -34,7 +34,7 @@ struct Printer {
 void PrintHelloWorld () {
     enum { kSize = 64 };
     char buffer[kSize];
-    PrinterInit (kSize, buffer) << "Hello" << " world! " 
+    PrinterInit (kSize, buffer) << "Hello" << " world! "
                                 << 1 << ' ' << 2 << " 3;
 }
 ```

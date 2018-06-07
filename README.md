@@ -1,13 +1,22 @@
-﻿﻿﻿﻿﻿# Kabuki Script
+﻿```
+ /\
+( /   @ @    ()
+ \  __| |__  /       _    ____   ____ ___ ___   ____            _       _   
+  -/   "   \-       / \  / ___| / ___|_ _|_ _| / ___|  ___ _ __(_)_ __ | |_
+ /-|       |-\     / ^ \ \___ \| |    | | | |  \___ \ / __| '__| | '_ \| __|
+/ /-\     /-\ \   / /_\ \ ___) | |___ | | | |   ___) | (__| |  | | |_) | |_
+ / /-`---'-\ \   /_/   \_\____/ \____|___|___| |____/ \___|_|  |_| .__/ \__|
+  /         \                                                    |_|       
+```
 
-This is the official repository for book Kabuki Script, a book that teaches how to make technology with Kabuki Toolkit and Script.
+This is the official repository for book ASCII Script, a book that teaches how to make technology with Kabuki Toolkit and ASCII Script.
 
 ## Quick Links
 
-* [Kabuki Script](https://github.com/CaleMcCollough/kabuki-script/wiki/01-Overview) - *Free Markdown version of the book.*
+* [Kabuki Script](https://github.com/CaleMcCollough/kabuki-script/01-Overview) - *Free Markdown version of the book.*
 * [Kabuki Toolkit](https://github.com/kabuki-starship/kabuki-toolkit) - *Official Kabuki Toolkit GitHub repository.*
 * [Script Specification RFC](https://github.com/kabuki-starship/script/wiki/SCRIPT-Specification-RFC)
-  - *Release for Comment for Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification.*
+  - *Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification Release for Comment.*
 
 ## Author
 

@@ -1,47 +1,44 @@
 # 1. Overview
 
-In this chapter you will learn an overview of:
+Modern C++ with ASCII Script and Kabuki Toolkit is a book about how to make intelligent connected devices with Automata Standard Code for Information Interchange (ASCII) Script and the Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Protocol using Kabuki Toolkit.
+
+Each chapter with the exception of this over will have a project that
+
+Overview will briefly explain:
 
 * The Chinese Room AI Thought Experiment.
 * Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification.
-* Kabuki Toolkit C++1x Firmware to Software Development Kit (F2SDK).
-
-This book will use
-
-This book walks through the operation of the following Kabuki Toolkit projects and modules:
-
-* **Kabuki Casino** - *An open-source casino software with a Card Game and (coming soon) hardware slot machine with multimedia app and virtual store.*
-* **Kabuki Sloth** - *An open-source *
-* **IGEEK** - *Interactive Genetic Evolutionary Environment for Kabuki*.
+* Kabuki Toolkit C++1x Firmware-to-Software Development Kit (F2SDK).
 
 ## 1.1 Content Table
 
-1.  [Overview](#1-overview)
+1.  *Overview*
     1. [Content Table](#11-content-table)
     2. [License](#12-license)
     3. [Preface](#13-preface)
     4. [Mission and Vision](#14-mission-and-vision)
-    5. [SCRIPT Specification and ASCII Script](#15-script-specification-and-ascii-script)
+    5. [SCRIPT Specification](#15-script-specification)
     6. [Kabuki Toolkit](#16-kabuki-toolkit)
     7. [Exercises](#17-exercises)
 	4. [Mission and Vision](#14-mission-and-vision)
+2.  [F2 Foundational Framework](02-f2-Foundational-framework.md)
 3.  [Script](#3-script)
-4.  [Application Framework](#4-application-framework)
-5.  [Web Library](#5-web-library)
-6.  [Id Library](#6-id-library)
-7.  [Store Library](#7-store-library)
-8.  [Graphics Library](#8-graphics-library)
-9.  [GUI Library](#9-gui-library)
-10. [Audio Library](#10-audio-library)
-11. [File Library](#11-file-library)
-12. [HMI Library](#12-hmi-library)
-13. [MIDI Library](#13-midi-library)
-14. [HAL Library](#14-hal-library)
-15. [Math Library](#15-math-library)
-16. [Project Library](#16-project-library)
-17. [Sloth Library](#17-sloth-library)
-18. [Installers](#18-installers)
-19. [Kabuki VM](#19-kabuki-vm)
+4.  [HMI Library](#12-hmi-library)
+5.  [Application Framework](#4-application-framework)
+6.  [Web Client](#5-web-client)
+7.  [Web Framework](#5-web-framework)
+8.  [Id Library](#6-id-library)
+9.  [Store Library](#7-store-library)
+10. [Graphics Library](#8-graphics-library)
+11. [GUI Library](#9-gui-library)
+12. [Audio Library](#10-audio-library)
+13. [File Library](#11-file-library)
+14. [MIDI Library](#13-midi-library)
+15. [HAL Library](#14-hal-library)
+16. [Math Library](#15-math-library)
+17. [Project Library](#16-project-library)
+18. [Sloth Library](#17-sloth-library)
+19. [Installers](#18-installers)
 
 ## 1.2 License
 
@@ -63,15 +60,15 @@ It took many years of tedious debugging and non-stop rework to get Script to a s
 
 ## 1.4 Mission and Vision
 
-The mission of this book is to teach people how to make technology with ASCII Script and Kabuki Toolkit using modern C++ practices, and get users up to speed as quickly as possible. It is the mission and vision of this book to provide a free markdown version of the book and also provide paper copies of the book for sale at an affordable price.
+The mission of this book is to teach people how to make technology with ASCII Script and Kabuki Toolkit using modern C++ practices, and get users up to speed as quickly as possible. The vision of this book is to provide a free Markdown version of the book to all, regardless of ability to pay, and earn money by selling paper books because paper books are awesome and teaching classes.
 
 The vision of this book is to provide enough projects, code snippets, and explanations to inspire the reader to innovate and bring their product to market as soon as possible.
 
 This book is also goes with the book by Cale McCollough entitled the Minmax Startup: Engineering Invention Startups using AI. Minmax Startup is a open source book markdown book with papers copies for purchase about how to invent, start, and run high tech startups using modern best practices with an AI twist. The mission in regards to Minmax Startup is to provide all people, regardless of ability to pay, with the educational resources they need to come up and share the bounties of this beautiful Earth and technology and entrepreneurial revolution. The vision is that people will actually buy paper copies of the book because paper books are awesome, not to make someone else wealthy while we are poor.
 
-## 1.5 SCRIPT Specification and ASCII Script
+## 1.5 SCRIPT Specification
 
-Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification, or Script for short, is a definition for a family of technologies based of the Chinese Room Thought Experiment. Script specifies:
+Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification, or Script for short, is a definition for a family of technologies based of the Chinese Room Thought Experiment. Script is useful for creating all kinds of apps, games, operating systems, consumer electronics, computers, etc with. Script was designed from scratch with a Sandwich Development Method to clean up and minimize the amount of code required to create apps as well as the memory and overhead processing using modern C++1x with cross-language bindings. Script specifies:
 
 * ASCII Data Types
 * Universal Polar Addressing
@@ -90,25 +87,32 @@ The Automata Standard Code for information Interchange (ASCII) Data Types are a 
 
 Universal Polar Addressing is a form of GPS coordinates that uses latitude and longitude as well as height above or below the earth's surface to route ultra-high-speed internet signals and convey Telemetry data. The format is the Telemetry Searle's Chinese Room, Interprocess, and Telemetry Protocol.
 
-### 1.5.d SCRIPT Protocol, Crabs, and ASCII Script
+### 1.5.d SCRIPT Specification
 
-The SCRIPT Protocol is a software-defined networking protocol (SDNP) based on the Chinese Room that supports both byte-encoded messages and human-readable text scripts. SDNP have the unique property that the languages may be swapped out dynamically at run-time and multiple language may coexists with each other in a single virtual machine. This is performed using the Chinese Room Abstract Stack Machine (Crabs).
+The SCRIPT Protocol is a software-defined networking protocol (SDNP) based on the Chinese Room that supports both byte-encoded messages and human-readable text scripts. SDNP have the unique property that the languages may be swapped out dynamically at run-time and multiple language may coexists with each other in a single virtual machine. This is performed using the Chinese Room Abstract Stack Machine (Crabs), also called the Magic Crabs.
 
 Crabs is a Virtual Machine Framework that uses some simple rules for how to detecting and handling keys, function parameters and arguments, and erroneous data and interpreting byte streams. Crabs is built for raw speed using modern C++ stack programming. Stack programming is a technique where as much data is placed on the stack as is possible and appropriate, and functions are optimized to minimize the number of register pushes and pops associated with function calls by taking advantage of how the C and C++ compiler handles the stack.
 
-ASCII Script is the reference Script API. ASCII Script is responsible for dictating the SCRIPT Protocol SDNP features such as handling keys, function parameters and arguments, and erroneous data. When feature is introduced to the SCRIPT Protocol, the feature must have a defined ASCII Script implementation. This does not mean that is the only implementation, only that it is the reference implementation. Feel free to make as many implementations and languages as you would like; gold stars going to all who get AI to write it's own implementation.
+ASCII Script is the reference Script API. ASCII Script is responsible for dictating the SCRIPT Protocol SDNP features such as handling keys, function parameters and arguments, and erroneous data. When feature is introduced to the SCRIPT Protocol, the feature must have a defined ASCII Script implementation. This does not mean that is the only implementation, only that it is the reference implementation. Feel free to make as many implementations as you would like; gold stars going to all who get AI to write it's own implementation.
 
 ## 1.6 Kabuki Toolkit
 
 Kabuki Toolkit is a Modern C++ Firmware-to-Software Development Kit (F2SDK), meaning it can be used to create anything from firmware to software. "Modern C++ toolkit" means that it is written is written using C++1x language features and uses modern best practices. The benefit of this design choice is that it is faster and easier (and most importantly cheaper) to create connected devices using one high quality unified development kit than it is to learn multiple APIs that are all formatted in different style guides and create an anarchy of design choices.
 
-KT leverages an automated build tool (still in the works) called the Slot (#CodeSloth) that automates the importing and updating of third-party libraries. The tool (will) flatten source code hierarchy, minimize the number of directories, refactor namespaces into generics, and reformat all of the code into to a single style guide.
+KT leverages an automated build tool (still in the works) called the Sloth that automates the importing and updating of third-party libraries. The tool (will) flatten source code hierarchy, minimize the number of directories, refactor namespaces into generics, and reformat all of the code into to a single style guide.
 
-KT at it's core is the reference implementation of ASCII Script. KT then builds on premium open-source C and C++ SDKs, and wraps them with ASCII Script. If a better underlying implementation is found and the community agrees to upgrade, then in that module will be replaced with a better wheel; the goal being to minimize the number of wheels being invented and maximize revenue from selling tires and hubcaps.
+KT at it's core is the reference implementation of ASCII Script. KT then builds on premium open-source C and C++ SDKs, and wraps them with ASCII Script. If a better underlying implementation is found and the community agrees to upgrade, then in that module will be replaced with a better wheel; the goal being to minimize the number of wheels being invented and maximize revenue from selling tires and hubcaps for a minimum cost.
 
-Kabuki Toolkit uses a UML compliant application framework with project structure, coding convention, and build system optimized for build time and ultra high performance using Embedded C++1x. Improvements come from compiler hash table key resolution optimizations, minimized file and directory count, flattened project module hierarchy into decoupled layers, and limited usage of templates. Application framework is designed to scale from embedded systems up to complex multimedia and IoT applications that provides a robust unit test framework using a ModuleNumber-SeamNumber layering system.
+### 1.6.a Conventions
+
+Kabuki Toolkit uses the following conventions:
+* Templates: { UI, SI, I, T } stands for { Unsigned Integer, Signed Integer, Integer, Generic Type }.
+*
 
 ## 1.8 Exercises
 
-1.) Read the SCRIPT Specification RFC.
-2.) Step through the Quickstart Guide in ~/docs/quickstart-guide.md.
+**1**. Explore the Script repository and read the SCRIPT Specification RFC at https://github.com/kabuki-starship/script.
+
+**2**. Work through the Quickstart Guide in ~/kabuki-toolkit/docs/quickstart-guide.md.
+
+**3**.
