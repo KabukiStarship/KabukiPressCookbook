@@ -1,15 +1,17 @@
 ﻿```
  /\
-( /   @ @    ()
- \  __| |__  /       _    ____   ____ ___ ___   ____            _       _   
-  -/   "   \-       / \  / ___| / ___|_ _|_ _| / ___|  ___ _ __(_)_ __ | |_
- /-|       |-\     / ^ \ \___ \| |    | | | |  \___ \ / __| '__| | '_ \| __|
-/ /-\     /-\ \   / /_\ \ ___) | |___ | | | |   ___) | (__| |  | | |_) | |_
- / /-`---'-\ \   /_/   \_\____/ \____|___|___| |____/ \___|_|  |_| .__/ \__|
-  /         \                                                    |_|       
+( /   @ @    ()    ██████╗██████╗  █████╗ ██████╗ ███████╗
+ \  __| |__  /    ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
+  -/   "   \-     ██║     ██████╔╝███████║██████╔╝███████╗
+ /-|       |-\    ██║     ██╔══██╗██╔══██║██╔══██╗╚════██║
+/ /-\     /-\ \   ╚██████╗██║  ██║██║  ██║██████╔╝███████║
+ / /-`---'-\ \     ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+  /         \      
 ```
 
-This is the official repository for book ASCII Script, a book that teaches how to make technology with Kabuki Toolkit and ASCII Script.
+# Script and Kabuki Toolkit Cookbook
+
+This is the official repository for book Script and Kabuki Toolkit Cookbook, a book that teaches how to make intelligent connected technology with Script and Kabuki Toolkit.
 
 ## Quick Links
 
