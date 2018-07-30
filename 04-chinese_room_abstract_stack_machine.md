@@ -11,11 +11,11 @@
 
 # 2 Chinese Room Abstract Stack Machine
 
-`Virtual machines` are machines that exists virtually inside of other machines as software or emulated hardware. The most basic is a Hardware Abstractions Layers (HAL) with Target Implementations. Above the HAL sits the abstract stack machine, which, as the name implies, is an stack machine that is abstract enough to run on almost any processor.
+**Virtual machines** are machines that exists virtually inside of other machines as software or emulated hardware. The most basic is a Hardware Abstractions Layers (HAL) with Target Implementations. Above the HAL sits the abstract stack machine, which, as the name implies, is an stack machine that is abstract enough to run on almost any processor.
 
  The Chinese Room Abstract Stack Machine (Crabs) is a virtual machine (VM) engine defined by the SCRIPT Specification that allows Chinese Rooms to communicate with messages through slots in doors that connect rooms; just like in the Chinese Room thought experiment.
 
-Kabuki Crabs is used to create the `F2 Foundational Framework`, or `F2`, which is the core application framework used through
+Kabuki Crabs is used to create the **F2 Foundational Framework**, or **F2**, which is the core application framework used through
 
 
 
@@ -26,10 +26,6 @@ Kabuki Script uses a fast text printing framework designed to similar to the C++
 ### 2.2.a Contiguous Text
 
 Contiguous text is text in a buffer doesn't have any gaps in the memory. The Crabs text system is designed to work with plain-old-C strings on the stack, `std::string`, and to integrate into other applications and languages using C bindings. Text is written using the Printer class, and is scanned from the Scanner class.
-
-## 2.3 Slot
-
-In the Chinese Room thought experiment, you write a message on a piece of paper and pass it through the slot in the door. The person in the room then performs a manual computer with pen and paper and misc. office supplies and writes the computed result on a piece of paper and passes it back through the door.
 
 ## 2.4 Printer
 
@@ -65,6 +61,8 @@ char16_t buffer2[2 * kSize + 1];
 Printer2 print2 (buffer2, kSize);
 print2 << "Testing " << 1 << ", 2, " << '3';
 ```
+
+## 2.
 
 # License
 
