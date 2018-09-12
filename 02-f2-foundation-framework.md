@@ -11,19 +11,27 @@
   (_)           (_)(_)(_)(_)(_)    
 ```
 
-The F2 Foundational Framework, or F2 for short, is a Modern-C++1x Page-Major-Minor Seam (PMMS) Unit Testing Framework and nanoframework for creating microframeworks and benchmarking software. F2 provides:
+The F2 Foundational Framework, or F2 for short, is a Modern-C++1x Seam Tree Unit Testing Framework and nanoframework for creating microframeworks and benchmarking algorithms. F2 provides:
 
 * Modified Google C++ Style Guide.
-* Sophisticated Page-Major-Minor Seam unit testing framework.
-* Rapid compiling library format with clean separation of `public.h` and `global.h` interfaces.
+* Rapid compiling library format.
 * Fastest number printing and scanning algorithms and associated algorithms.
-* Useful minimized set of console IO functions for concise debug macros.
+* Seam Trees maximize test quality by quickly pealing back and decoupling software layers and enumerating work to be done to minimize development and maintenance costs.
+* Minimized set of common console IO functions for concise debug macros.
+* Utilities for benchmarking algorithms.
+* Nothing else so you can embed F2 into research papers and quick little ditties.
+* Integer Not-a-Numbers (NaNs) and default integer upper bounds.
 
 ## 2.1 F2 C++ Style Guide
 
-The F2 C++ Style Guide is a modified version of the Google C++ Guide. :
+The F2 C++ Style Guide is a modified version of the Google C++ Guide that can be found at:
 
-[https://google.github.io/styleguide/cppguide.html](https://google.github.io/styleguide/cppguide.html)
+[https://github.com/kabuki-starship/kabuki-toolkit/tree/master/docs](https://github.com/kabuki-starship/kabuki-toolkit/tree/master/docs)
+
+Major differences between the Google and F2 C++ Style Guides are:
+
+* Allowance of all uppercase public member names.
+* Detailed Doxygen comment style guide.
 
 ## 2.2 Almost-UML-Compliant
 
@@ -68,31 +76,25 @@ C is not UML compliant because it is not object oriented. F2 incorporates C into
 
 An assembly in Assembly programming and C/C++ is a set of source code compiled into a single contiguous block of executable code using the C or similar calling convention. There are only two primary types of assemblies, precompiled libraries and executable files. The rule in C++ for libraries and DLLs is that a precompiled library may not include any other precompiled libraries, but a executable file may incorporate multiple precompiled libraries. This is because of the way that C++ does name mangling and setups up the static memory.
 
-## 2.6 Page, Major and Minor Seams
+## 2.6 LMM Seam Trees
 
-The Page-Major-Minor Seam Enumeration System is based upon a standard 8.5" by 11" sized sheet of paper with enough room for margins, a header, a paragraph, and a footer to allow for clean printing into Engineered Software Analysis and Software System Definitions either vertically or horizontally. Enumerated seams allow developers to peal back the layers of the code to the core so you can debug that seam in isolation with debug information that is customized for that seam.
+Layer-Major-Minor (LMM) Seam Trees is a Seam Enumeration System using a three-layer tree of the smallest seam increment called Minor Seams, groups of Minor Seams called Major Seams, and groups of Major Seams called Layer Seams. Developers decouple software layers, application components, and API layers down to enumerated unit test seam groups that build up to demo projects and groups of demo projects to form to create a complex robustly-tested software product. Enumerated seams allow developers to peal back the layers of the code to the core so you can debug that seam in isolation with debug information that is customized for that seam.
 
-Page and Major seams numbers are contiguous integers either in the range [0,9] or [00,99] enumerated in the order they are to be tested. If the index is range [0,9] the seam number will be a 2 digit number. If the index is range [00,99] the seam number will be a 4 digit number.  Most software will fit neatly in a single page with less than 11 pages and 11 major seams, but  minor seams may number in the hundreds. For this reason the minor seam is combined with the 2 or 4 digit Page-Major Seams Number. For example SEAM_12_345 is Page number 1 (the second page), Major Seam 2 (the third major seam.), and Minor seam 345 (the 346th minor seam.).
+There is no limitation to how many layers can be created with Seam Trees, but at this point a larger seam than a layer was been envisioned as an application unique id; please send feedback to [cale.mccollough@gmail.com](mailto:cale.mccollough@gmail.com) as to what you think a very large seam tree should look like.
 
-The smallest seam increment is the Minor Seam. A Minor Seam is defined as a group of one or more files that are decoupled from the minor seam above them, and those files have debug information specific to that minor seam.
+Seam Numbers, also called Seam Indexes, are contiguous integers either in the range [0,9] or [00,99] enumerated in the order they are to be tested. The requirement for use of double digit seam indexes is to preserve numerical order when the files are sorted alphabetically. One useful feature of LMM Seam Trees is they allow developers to break up large project seam diagrams so they can be neatly printed on a standard piece of paper for use in Engineered Software Analysis.
 
-The second largest seam increment is the Major Seam. A Major Seam is defined as a group of two or more Minor Seams that have one or more executable projects associated with them.
+Modules may be spread out across multiple seams. For instance, work on an module may start in SEAM_0_1_0 and SEAM_1_x_x may have a working functioning executable program. On SEAM_0_2_x the object then goes through one or more development iterations. The point of the seam enumeration is to put most important work to be done in numerical order, so coupling of layers may need to be built up after multiple layers of unit tests to ensure bug-free integration.
 
-Namespaces and modules may be spread out across multiple seams. For instance, work on an module may start in SEAM_01_0 and SEAM_1 may have a working functioning executable program. On SEAM_02 the object then goes through one or more development iterations.
-
-The largest seam increment currently defined by F2 is a Page Seam. A Page Seam is defined as a group of two or more major seams that fit neatly on single 8.5" by 11" sheet of paper; hence the name Page Seam.
-
-Modules may appear on multiple seams and pages. For example, part of a module may be introduced in SEAM_01 and that module may also be developed upon in SEAM_02, then not developed upon in SEAM_03, but again developed upon in SEAM_04. When a previous seam has been changed, it may regress the Progress Seam number. The Project Progress Seam Number is the seam number is the highest seam number that has passed all of the unit tests.
-
-Implementations that cannot fit their software on a single page of paper first must  perform a sanity check and determine if the design could be simplified and may set the size of their engineered software analysis to some paper size larger than 8.5" x 11" but must shrink the page to 8.5" x 11" and provide an online link to the full-sized Page-Seam Diagram.
+Minor Seams all get enumerated into positive Seam Indexes using the `SEAM` macro starting at `SEAM_0_0_0` equal to `SEAM 1`, and F2 refers to the highest `SEAM` index as `SEAM_N`, where N is the number of minor seams. If `SEAM` is greater than 0 and less than or equal to `SEAM_N`, then the `DEBUG` flag is `#define DEBUG 1`. If `SEAM` is less than 1 then the application is considered to be in Debugging Release Mode, which is where the application complies like it's going to get released but it still includes the unit test. If the `SEAM` is greater than `SEAM_N` then the application is in Release Mode where no unit test is included.
 
 #### Rules Against Seam Gerrymandering
 
-Seam Gerrymandering is, as the name implies, very similar to political district Gerrymandering, only it is when a seam covers regions that are representative of the seam district. Seams should not be Gerrymandered in such a way to the seam is falsely represented.
+Seam Gerrymandering is, as the name implies, very similar to political district Gerrymandering, only it is when a seam covers regions that are representative of the seam district. Seams should not be Gerrymandered in such a way to the seam is falsely represented and should have a proper demo apps.
 
 ### 2.7 Precompiled Header and Seams Header
 
-F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `stdafx.h` to include `cstdint` and to define the PMMS macros , but a filename is not a framework so the name does not matter but the default is `stdafx.h`. F2 software provides the precompiled header file in the $ProjectDirectory/source file.
+F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `stdafx.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the PMMS macros, but a filename is not a framework so the name does not matter but the default is `stdafx.h`. F2 software provides the precompiled header file in the $(ProjectDir)\ file.
 
 ```C++
 // Barebones stdafx.h header
@@ -217,7 +219,7 @@ Usage of assert statements in F2 is for development phase as a form of training 
 
 ## 2.11 C ABI
 
-A *C Application Binary Interface* (*ABI*) helps with the creation of cross-language bindings and dramatic reduction of compile time. KT uses a modern system of concealing library template implementations behind a C ABI with explicit data types, and using modern C++1x wrappers. KT does not at this time provide a C99 interface but future versions will.
+A *C Application Binary Interface* (*ABI*) helps with the creation of cross-language bindings and dramatic reduction of compile time. KT uses a modern system of concealing library template implementations behind a C ABI with explicit data types, and using modern C++1x wrappers. KT does not at this time provide a C99 interface but future versions will. The C ABI can be found in the `public.h` files.
 
 ## 2.12 Framework for C++ Templates
 
@@ -231,7 +233,9 @@ The *Highest Seam Number* (**HSM**) Once many libraries need to get compiled, th
 
 ## 2.14 Number Handling
 
-F2 handles numbers as is specified in the SCRIPT specification
+F2 handles numbers as is specified in the SCRIPT specification, which can be found at:
+
+[https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers)
 
 ### 2.14.a Not-a-number
 
@@ -257,12 +261,6 @@ T GetSomething () { return 0; }
 uint8_t GetSomethingUI1 () { return 0; }
 float GetSomethingFLT () { return 0.0f; }
 ```
-
-## 2.17 Important Terminology
-
-### 2.16.a Socket vs Buffer
-
-A socket is just like a real-world socket only with memory; a socket is a block of memory that something fits snuggly inside. A buffer in contrast typically has extra memory intended to be left unused as a buffer. A buffer may be a socket and a buffer fits in a socket, but a socket doesn't have an overflow buffer.
 
 # License
 

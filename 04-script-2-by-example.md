@@ -11,7 +11,7 @@ Print "Hello Chinese Room!"
 Print ("Hello Chinese Room")
 ```
 
-// With Script^2 installed and added to your path this script can be run by ascii hello_chinese_room.as.
+// With Script^2 installed and added to your path this script can be run by ascii hello_chinese_room.s2.
 
 # Simple Functions
 

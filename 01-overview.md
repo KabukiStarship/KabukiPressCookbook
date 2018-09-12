@@ -43,7 +43,7 @@ This overview chapter will briefly explain the:
 
 ## 1.1 Content Table
 
-1.  *Overview*
+1. *Overview*
     1. [Content Table](#11-content-table)
     2. [License](#12-license)
     3. [Preface](#13-preface)
@@ -52,7 +52,8 @@ This overview chapter will briefly explain the:
     6. [Kabuki Toolkit](#16-kabuki-toolkit)
     7. [Exercises](#17-exercises)
 	4. [Mission and Vision](#14-mission-and-vision)
-2.  [crabs](02-chinese_room_abstract_stack_machine#2-chinese-room-abstract-stack-machine)
+2. [F2 Foundational Framework](
+3.  [Chinese Room Abstract Stack Machine](03-chinese_room_abstract_stack_machine#2-chinese-room-abstract-stack-machine)
 
 ## 1.2 License
 
