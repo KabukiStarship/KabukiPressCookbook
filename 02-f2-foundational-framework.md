@@ -19,8 +19,8 @@ The F2 Foundational Framework, or F2 for short, is a Modern-C++1x Seam Tree Unit
 * Seam Trees maximize test quality by quickly pealing back and decoupling software layers and enumerating work to be done to minimize development and maintenance costs.
 * Minimized set of common console IO functions for concise debug macros.
 * Utilities for benchmarking algorithms.
-* Nothing else so you can embed F2 into research papers and quick little ditties.
 * Integer Not-a-Numbers (NaNs) and default integer upper bounds.
+* Nothing else so you can embed F2 into research papers and quick little ditties.
 
 ## [2.1] F2 C++ Style Guide
 
@@ -31,7 +31,7 @@ The F2 C++ Style Guide is a modified version of the Google C++ Guide that can be
 Major differences between the Google and F2 C++ Style Guides are:
 
 * Allowance of all uppercase public member names.
-* Detailed Doxygen comment style guide.
+* Doxygen comment style guide.
 
 ## [2.2] Almost-UML-Compliant
 
@@ -76,28 +76,20 @@ C is not UML compliant because it is not object oriented. F2 incorporates C into
 
 An assembly in Assembly programming and C/C++ is a set of source code compiled into a single contiguous block of executable code using the C or similar calling convention. There are only two primary types of assemblies, precompiled libraries and executable files. The rule in C++ for libraries and DLLs is that a precompiled library may not include any other precompiled libraries, but a executable file may incorporate multiple precompiled libraries. This is because of the way that C++ does name mangling and setups up the static memory.
 
-## [2.6] LMM Seam Trees
+## [2.6] Standard Seam Trees
 
-Layer-Major-Minor (LMM) Seam Trees is a Seam Enumeration System using a three-layer tree of the smallest seam increment called Minor Seams, groups of Minor Seams called Major Seams, and groups of Major Seams called Layer Seams. Developers decouple software layers, application components, and API layers down to enumerated unit test seam groups that build up to demo projects and groups of demo projects to form to create a complex robustly-tested software product. Enumerated seams allow developers to peal back the layers of the code to the core so you can debug that seam in isolation with debug information that is customized for that seam.
 
-There is no limitation to how many layers can be created with Seam Trees, but at this point a larger seam than a layer was been envisioned as an application unique id; please send feedback to [cale.mccollough@gmail.com](mailto:cale.mccollough@gmail.com) as to what you think a very large seam tree should look like.
-
-Seam Numbers, also called Seam Indexes, are contiguous integers either in the range [0,9] or [00,99] enumerated in the order they are to be tested. The requirement for use of double digit seam indexes is to preserve numerical order when the files are sorted alphabetically. One useful feature of LMM Seam Trees is they allow developers to break up large project seam diagrams so they can be neatly printed on a standard piece of paper for use in Engineered Software Analysis.
-
-Modules may be spread out across multiple seams. For instance, work on an module may start in SEAM_0_1_0 and SEAM_1_x_x may have a working functioning executable program. On SEAM_0_2_x the object then goes through one or more development iterations. The point of the seam enumeration is to put most important work to be done in numerical order, so coupling of layers may need to be built up after multiple layers of unit tests to ensure bug-free integration.
-
-Minor Seams all get enumerated into positive Seam Indexes using the `SEAM` macro starting at `SEAM_0_0_0` equal to `SEAM 1`, and F2 refers to the highest `SEAM` index as `SEAM_N`, where N is the number of minor seams. If `SEAM` is greater than 0 and less than or equal to `SEAM_N`, then the `DEBUG` flag is `#define DEBUG 1`. If `SEAM` is less than 1 then the application is considered to be in Debugging Release Mode, which is where the application complies like it's going to get released but it still includes the unit test. If the `SEAM` is greater than `SEAM_N` then the application is in Release Mode where no unit test is included.
 
 #### Rules Against Seam Gerrymandering
 
-Seam Gerrymandering is, as the name implies, very similar to political district Gerrymandering, only it is when a seam covers regions that are representative of the seam district. Seams should not be Gerrymandered in such a way to the seam is falsely represented and should have a proper demo apps.
+Seam Gerrymandering is, as the name implies, very similar to political district Gerrymandering, only it is when a seam covers regions that are representative of the seam district. Seams should not be Gerrymandered in such a way to the seam is falsely represented and should have a proper demo apps. Instead, modules should be decomposed into a tree structure, assigned permanent Seam Tree Node Index, and Scrums collapsed into SPRINT(s) upon release. The purpose of this system is to avoid sweeping dirt around on the forest floor and instead sweep the dirt out of the scrums.
 
-### [2.7] Precompiled Header and Seams Header
+### [2.7] Standard Seam Tree Macros
 
-F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `stdafx.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the PMMS macros, but a filename is not a framework so the name does not matter but the default is `stdafx.h`. F2 software provides the precompiled header file in the $(ProjectDir)\ file.
+F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `pch.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the macros using the `<kabuki/f2/config.h` file. F2 software provides the precompiled header file in the $(ProjectDir)\ file.
 
 ```C++
-// Barebones stdafx.h header
+// Barebones pch.h header.
 #pragma once
 
 #include <cstdarg>
@@ -107,14 +99,21 @@ typedef unsigned int uint;
 
 #define API
 
-#define SEAM_PAGE 0
-#define SEAM_MAJOR 0
-#define SEAM_MINOR 0
+#define SEAM_LAYER   0
+#define SEAM_MILLI   0
+#define SEAM_MICRO   0
+#define SEAM_NANO    0
+#define SEAM_PICO    0
+#define SEAM_FEMTO   0
+
+#define SEAM_PROJECT 0
+#define SEAM_SPRINT  0
+#define SEAM_SCRUM   0
 
 #define SEAM_0_0_0 1
 #define SEAM_0_0_1 2
 #define SEAM_0_0_2 3
-#define SEAM_COUNT 3
+#define SEAM_N 3
 
 #define WORD_SIZE 64
 
@@ -124,20 +123,20 @@ typedef unsigned int uint;
 #ifndef INCLUDED_SEAMS
 #define INCLUDED_SEAMS
 
-#if SEAM_PAGE == 0
+#if SEAM_LAYER == 0
 #if SEAM_MAJOR == 0 //< SEAM_MAJOR 0 is reserved for the SDK.
 #if SEAM_MINOR == 0
 #define SEAM_0_0_0
 #define SEAM 1
 #elif SEAM_MINOR == 1
-#define SEAM_0_0_1
+#define SEAM_00_00_1
 #define SEAM 2
 #elif SEAM_MINOR == 2
 #define SEAM_0_0_2
 #define SEAM 3
 #endif
-#endif  //< #if SEAM_MAJOR == 0
-#endif  //< #if SEAM_PAGE == 0
+#endif  //< #if SEAM_MILLI == 0
+#endif  //< #if SEAM_LAYER == 0
 
 #if SEAM > 0 && SEAM <= SEAM_COUNT
 #define DEBUG 1
@@ -177,7 +176,7 @@ When you see PRINTF or PRINT in all caps, this means this is debug information f
 
 ## [2.8] Global and Module Configuration
 
-Each source code module contains a `config.h`, the config file, and `global.h`, the global file it the `$ModuleRoot`. There is no `config.h` file for the primary SDK because the assembly is configured in the `stdafx.h` file. Instead implementations designate the first include module as the SDK core.
+Each source code module contains a `config.h`, the config file, and `global.h`, the global file it the `$ModuleRoot`. There is no `config.h` file for the primary SDK because the assembly is configured in the `pch.h` file. Instead implementations designate the first include module as the SDK core.
 
 The `global.h` file contains `#include` references for all of the module's public facing API the entire module may be imported by importing the `global.h` file. The `config.h` file contains all of the modules dependencies and configuration information. In the target program there is a `assembly.h` file that gets `#include` inline from each module's `config.h` file and is used to configure the compiled assembly.
 
@@ -211,7 +210,7 @@ Filename is `foo_bar_go.cc`.
 
 ## [2.10] Usage of Precompiled header
 
-The use of precompiled headers dramatically speeds up the compilation of C++ software. F2 Compliant software have a precompiled header that contains the SEAM_MAJOR, SEAM_MINOR, and SEAM_PAGE macros.
+The use of precompiled headers dramatically speeds up the compilation of C++ software. F2 Compliant software have a precompiled header that contains the SEAM_MAJOR, SEAM_MINOR, and SEAM_LAYER macros.
 
 ## [2.11] Usage of Asserts
 
@@ -257,6 +256,81 @@ T GetSomething () { return 0; }
 uint8_t GetSomethingUI1 () { return 0; }
 float GetSomethingFLT () { return 0.0f; }
 ```
+
+## [2.17] Static Test Functions and Functions
+
+In C, a static function is only visible inside of that translation unit. F2 software is designed for rapid compilation and execution. Usage of static functions outside of classes shall be reserved for unit tests and cache optimization in order to duplicate the function inside multiple translation units to optimized for locality of reference. In other words, don't use static just to be lazy, put it in the implementation file.
+
+## [2.18] Static Arrays
+
+Static arrays in F2 are handled using wrapper functions that hide the static data from the headers that get compiled into each translation unit. Whenever the size of the array is used in the software, the wrapper function shall return a pointer to the array and the reference to the size variable passed in as a parameter.
+
+***Example***
+
+```C++
+// In header:
+const int* Foo (int& bar);
+
+// In implementation:
+const int* Foo (int& bar) {
+  static const kFooBar[] = { 1, 2, 3 };
+  bar = 3;
+  return kFooBar;
+}
+```
+
+## [2.19] Universal Text Printer
+
+F2 uses a ultra-fast text printing framework designed to work similar to the C++ `std::cout` and provide the formatting functionality to `printf` using some utility classes. The most noticeable difference between the operation of the two are that the UTF uses a pointer to the first and last Unicode character in a buffer.
+
+### [2.19.a] Contiguous Text
+
+Contiguous text is text in a buffer doesn't have any gaps in the memory. The Crabs text system is designed to work with plain-old-C strings on the stack, `std::string`, and to integrate into other applications and languages using C bindings. Text is written using the Printer class, and is scanned from the Scanner class.
+
+## [2.20] Printer
+
+The Printer is a utility for printing UTF-8, UTF-16, and UTF-32 strings. The class stores 2 pointers, the end of buffer pointer and the cursor. The cursor is required to always point at a location in memory that you can write a nil-term char (i.e. a zero). The Printer class uses the Print functions and the overloaded `operator<<` similar to `std::cout`.
+
+### Printer Example
+
+```C++
+#include <crabs/printer.h>
+enum { kSize = 1024 };
+char buffer[kSize + 1];
+Printer<> print (buffer, kSize);
+
+print << "Testing " << 1 << ", 2, " << '3';
+```
+
+### Template Optimizations for UTF-16 and UTF-32
+
+The usage of C++ templates in headers prevents the system from being able to precompile code, dramatically increasing compile time. The solution is to place all templates in one header, and to create template specializations for the common types using inline wrapper functions with implementation in a `.cc` file.
+
+### UTF-16 Printer2 Example
+
+```C++
+enum { kSize = 1024 };
+
+#include <crabs/tutf.h>
+char16_t buffer[kSize + 1];
+Printer<char16_t> print (buffer, kSize);
+print << "Testing " << 1 << ", 2, " << '3';
+
+#include <crabs/printer2.h>
+char16_t buffer2[2 * kSize + 1];
+Utf2 print2 (buffer2, kSize);
+print2 << "Testing " << 1 << ", 2, " << '3';
+```
+
+## [3.4] Console vs Terminal
+
+In Crabs there a difference between an Console and a Terminal. A Crabs Console is like the normal console that is usually also called a Terminal. A Crabs Terminal is specially a serial stream that runs the SCRIPT Protocol.
+
+### [3.4.a] COut and CIn
+
+Console input and output are performed through the COut and CIn modules.
+
+### []
 
 # License
 

@@ -9,7 +9,7 @@
   /         \     
 ```
 
-# 3 Chinese Room Abstract Stack Machine
+# [3] Chinese Room Abstract Stack Machine
 
 **Virtual machines** are machines that exists virtually inside of other machines as software or emulated hardware. The most basic is a Hardware Abstractions Layers (HAL) with Target Implementations. Above the HAL sits the abstract stack machine, which, as the name implies, is an stack machine that is abstract enough to run on almost any processor.
 
@@ -17,7 +17,7 @@
 
  The primary documentation for Crabs is the SCRIPT Specification so this chapter is a more pleasant to read overviewed geared towards the Kabuki Starship implementation.
 
-## 3.1 Philosophical Background and Terminology
+## [3.1] Philosophical Background and Terminology
 
 In the following overview of the **Chinese Room Thought Experiment (CRTE)**, when you read a word in UpperCamelCase that word is a Chinese Room keyword and also the name of the corresponding object class in the SCRIPT Specification.
 
@@ -36,53 +36,6 @@ The final level of the CRTE is where you put the CRI on top of an Android that l
 Every Roombot is connected through the Intergalactic Internet using Searle's Chinese Room Interprocess, and Telemetry Protocol to form the Intergalactic Council of Artificial and Natural Neural Nets (ICAN3).
 
 Now you know why Cale built the Chinese Room. We must know: at what point does a SCRIPT Network become conscious?
-
-## 3.2 Text Printer and Scanner
-
-Crabs slightly modifies the CRTE to allow Rooms to communicate with internet-enabled Printer and Scanner called a Universal Printer and Scanner (UPS), because it does not functionally change the thought experiment.
-
-ASCII Script uses a fast text printing framework designed to similar to the C++ `std::cout` and provide the formatting functionality to `printf` using some utility classes.
-
-### 3.2.a Contiguous Text
-
-Contiguous text is text in a buffer doesn't have any gaps in the memory. The Crabs text system is designed to work with plain-old-C strings on the stack, `std::string`, and to integrate into other applications and languages using C bindings. Text is written using the Printer class, and is scanned from the Scanner class.
-
-## 3.3 Printer
-
-The Printer is a utility for printing UTF-8, UTF-16, and UTF-32 strings. The class stores 2 pointers, the end of buffer pointer and the cursor. The cursor is required to always point at a location in memory that you can write a nil-term char (i.e. a zero). The Printer class uses the Print functions and the overloaded `operator<<` similar to `std::cout`.
-
-### Printer Example
-
-```C++
-#include <crabs/printer.h>
-enum { kSize = 1024 };
-char buffer[kSize + 1];
-Printer<> print (buffer, kSize);
-
-print << "Testing " << 1 << ", 2, " << '3';
-```
-
-### Template Optimizations for UTF-16 and UTF-32
-
-The usage of C++ templates in headers prevents the system from being able to precompile code, dramatically increasing compile time. The solution is to place all templates in one header, and to create template specializations for the common types using inline wrapper functions with implementation in a `.cc` file.
-
-### UTF-16 Printer2 Example
-
-```C++
-enum { kSize = 1024 };
-
-#include <crabs/printer.h>
-char16_t buffer[kSize + 1];
-Printer<char16_t> print (buffer, kSize);
-print << "Testing " << 1 << ", 2, " << '3';
-
-#include <crabs/printer2.h>
-char16_t buffer2[2 * kSize + 1];
-Printer2 print2 (buffer2, kSize);
-print2 << "Testing " << 1 << ", 2, " << '3';
-```
-
-## 3.4
 
 # License
 
