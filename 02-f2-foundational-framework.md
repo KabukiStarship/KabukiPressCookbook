@@ -20,6 +20,7 @@ The F2 Foundational Framework, or F2 for short, is a Modern-C++1x Seam Tree Unit
 * Minimized set of common console IO functions for concise debug macros.
 * Utilities for benchmarking algorithms.
 * Integer Not-a-Numbers (NaNs) and default integer upper bounds.
+* ASCII Data Types.
 * Nothing else so you can embed F2 into research papers and quick little ditties.
 
 ## [2.1] F2 C++ Style Guide
@@ -47,7 +48,7 @@ F2 Software supports the use of Hungarian Notation to incorporate templated obje
 // Class Foo_UI_SI_I with function Foo_SI2 translates to the following C++ class:
 
 template<typename UI, typename SI, typename I>
-struct Foo {
+struct TFoo {
     UI one;
     SI two;
     I  three;
@@ -68,9 +69,11 @@ struct Foo {
 std::cout << Foo<uint32_t, int32_t, int16_t> (1, 2, 3).Bar<char> ();
 ```
 
-## [2.4] CFacade
+## [2.4] C Structs and CFacade
 
-C is not UML compliant because it is not object oriented. F2 incorporates C into UML using CFacade(s). What this means is that the c module tag is used as an object in a UML model. In the code base there is no CFacade object, it's just a graphical representation for use in UML diagrams to better support cross-platform and cross-language programming.
+C is not UML compliant because it is not object oriented. F2 incorporates C into UML using CFacade(s) What this means is that the c module tag is used as an object in a UML model. In the code base there is no CFacade object, it's just a graphical representation for use in UML diagrams to better support cross-platform and cross-language programming.
+
+In order to distinguish between a C-ABI struct and a C++ object file, the C prefix is added to every C struct, but C++ objects to not use this convention, which helps distinguish between C and C++ functionality.
 
 ## [2.5] The Assembly Line Boundary
 

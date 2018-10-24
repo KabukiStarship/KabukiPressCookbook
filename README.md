@@ -15,6 +15,8 @@
                 `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
 ```
 
+![Under Construction Image](https://github.com/kabuki-starship/kabuki-toolkit/wiki/under_construction.png)
+
 # Kabuki Toolkit Cookbook
 
 This is the official repository for book Script and Kabuki Toolkit Cookbook, a book that teaches how to make intelligent connected technology with Script and Kabuki Toolkit.
@@ -23,7 +25,7 @@ This is the official repository for book Script and Kabuki Toolkit Cookbook, a b
 
 * [Kabuki Script](https://github.com/CaleMcCollough/kabuki-script/01-Overview) - *Free Markdown version of the book.*
 * [Kabuki Toolkit](https://github.com/kabuki-starship/kabuki-toolkit) - *Official Kabuki Toolkit GitHub repository.*
-* [Script Specification RFC](https://github.com/kabuki-starship/script/wiki/SCRIPT-Specification-RFC)
+* [Script Specification RFC](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md)
   - *Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification Release for Comment.*
 
 # Book Chapters
