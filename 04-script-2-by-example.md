@@ -2,7 +2,7 @@
 
 This is not original material that I borrowed from https://juliabyexample.helpmanual.io/ because the [Julia programming language](https://julialang.org/) is FREAKING EPIC and I'm in the process of swapping it out with Script^2. Pay no attention to the man behind the curtain. I think this is an EXCELLENT and samuelcolvin did a phenomenal job with this tutorial. Someone give him a start on Github.
 
-This page contains the set of official examples of the Searle's Chinese Room, Interprocess, and Telemetry Script (SCRIPT Script or Script^2),  high-performance dynamic software-defined networking protocol and socket-oriented programming language for general purpose computing.
+This page contains the set of official examples of the Searle's Chinese Room, Interprocess, and Telemetry Script (SCRIPT Script or Script^2), high-performance dynamic software-defined networking protocol and socket-oriented programming language for general purpose computing.
 
 The simplest possible script.
 
@@ -903,3 +903,13 @@ insert!(iris, 5, rand(nrow(iris)), :randCol)
 
 // remove it
 `delete!(iris, :randCol)`
+
+# License
+
+Kabuki Toolkit Coolbook Copyright (C) 2018 samuelcolvin and Cale McCollough <<[mailto:cale.mccollough@gmail.com](cale.mccollough@gmail.com)>> <<[https://calemccollough.github.io](https://calemccollough.github.io)>>
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
