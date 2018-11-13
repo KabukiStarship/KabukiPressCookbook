@@ -1,17 +1,18 @@
-# [2] F2 Foundational Framework
+# [2] Seam Trees
 
 ```
-   _  _  _  _  _    _  _  _        
-  (_)(_)(_)(_)(_)_ (_)(_)(_) _     
-  (_)           (_)         (_)       __      
-  (_) _  _                _ (_)     [|-oundational
-  (_)(_)(_)            _ (_)       
-  (_)               _ (_)                __           
-  (_)            _ (_) _  _  _         [|-ramework   
-  (_)           (_)(_)(_)(_)(_)    
+  ██████ ▓█████ ▄▄▄       ███▄ ▄███▓   ▄▄▄█████▓ ██▀███  ▓█████ ▓█████   ██████
+▒██    ▒ ▓█   ▀▒████▄    ▓██▒▀█▀ ██▒   ▓  ██▒ ▓▒▓██ ▒ ██▒▓█   ▀ ▓█   ▀ ▒██    ▒
+░ ▓██▄   ▒███  ▒██  ▀█▄  ▓██    ▓██░   ▒ ▓██░ ▒░▓██ ░▄█ ▒▒███   ▒███   ░ ▓██▄   
+  ▒   ██▒▒▓█  ▄░██▄▄▄▄██ ▒██    ▒██    ░ ▓██▓ ░ ▒██▀▀█▄  ▒▓█  ▄ ▒▓█  ▄   ▒   ██▒
+▒██████▒▒░▒████▒▓█   ▓██▒▒██▒   ░██▒     ▒██▒ ░ ░██▓ ▒██▒░▒████▒░▒████▒▒██████▒▒
+▒ ▒▓▒ ▒ ░░░ ▒░ ░▒▒   ▓▒█░░ ▒░   ░  ░     ▒ ░░   ░ ▒▓ ░▒▓░░░ ▒░ ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+░ ░▒  ░ ░ ░ ░  ░ ▒   ▒▒ ░░  ░      ░       ░      ░▒ ░ ▒░ ░ ░  ░ ░ ░  ░░ ░▒  ░ ░
+░  ░  ░     ░    ░   ▒   ░      ░        ░        ░░   ░    ░      ░   ░  ░  ░  
+      ░     ░  ░     ░  ░       ░                  ░        ░  ░   ░  ░      ░  
 ```
 
-The F2 Foundational Framework, or F2 for short, is a Modern-C++1x Seam Tree Unit Testing Framework and nanoframework for creating microframeworks and benchmarking algorithms. F2 provides:
+Seam Tree Testing is a unit testing and mocking methodology for C/C++ and languages that support conditional compilation where seams are enumerated 1-N, where N is the number of seams, and a tree of seams is created with related seams grouped in nodes and leaves contain groups of tests.
 
 * Modified Google C++ Style Guide.
 * Rapid compiling library format.
@@ -34,7 +35,7 @@ Major differences between the Google and F2 C++ Style Guides are:
 * Allowance of all uppercase public member names.
 * Doxygen comment style guide.
 
-## [2.2] Almost-UML-Compliant
+## [2.2] UML Seam Trees
 
 Almost-UML-compliant means that the core of the proprietary software is UML compliant with the exceptions of allowed use of Hungarian Notation UML Templates and the CFacade, and third-party libraries may not be UML-compliant but are mapped in an Almost-UML-compliant object wrapper.
 
@@ -81,7 +82,7 @@ An assembly in Assembly programming and C/C++ is a set of source code compiled i
 
 ## [2.6] Standard Seam Trees
 
-
+Sorry, this section is out of date but will be updated very soon.
 
 #### Rules Against Seam Gerrymandering
 
@@ -89,89 +90,16 @@ Seam Gerrymandering is, as the name implies, very similar to political district 
 
 ### [2.7] Standard Seam Tree Macros
 
-F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `pch.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the macros using the `<kabuki/f2/config.h` file. F2 software provides the precompiled header file in the $(ProjectDir)\ file.
+F2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The F2 convention however does use the Microsoft standard `pch.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the macros using the `<script2/config.h>` file. F2 software provides the precompiled header file in the $(ProjectDir)\ file.
 
 ```C++
-// Barebones pch.h header.
-#pragma once
 
-#include <cstdarg>
-#include <cstdint>
-
-typedef unsigned int uint;
-
-#define API
-
-#define SEAM_LAYER   0
-#define SEAM_MILLI   0
-#define SEAM_MICRO   0
-#define SEAM_NANO    0
-#define SEAM_PICO    0
-#define SEAM_FEMTO   0
-
-#define SEAM_PROJECT 0
-#define SEAM_SPRINT  0
-#define SEAM_SCRUM   0
-
-#define SEAM_0_0_0 1
-#define SEAM_0_0_1 2
-#define SEAM_0_0_2 3
-#define SEAM_N 3
-
-#define WORD_SIZE 64
-
-#define APP_EXIT_SUCCESS 0
-#define APP_EXIT_FAILURE 1
-
-#ifndef INCLUDED_SEAMS
-#define INCLUDED_SEAMS
-
-#if SEAM_LAYER == 0
-#if SEAM_MAJOR == 0 //< SEAM_MAJOR 0 is reserved for the SDK.
-#if SEAM_MINOR == 0
-#define SEAM_0_0_0
-#define SEAM 1
-#elif SEAM_MINOR == 1
-#define SEAM_00_00_1
-#define SEAM 2
-#elif SEAM_MINOR == 2
-#define SEAM_0_0_2
-#define SEAM 3
-#endif
-#endif  //< #if SEAM_MILLI == 0
-#endif  //< #if SEAM_LAYER == 0
-
-#if SEAM > 0 && SEAM <= SEAM_COUNT
-#define DEBUG 1
-#endif
-
-#endif  //< #if INCLUDED_SEAMS
-
-#if COMPILER == VISUAL_CPP
-#define FORMAT_SI8 "%I64i"
-#define FORMAT_UI8 "%I64u"
-#else
-#define FORMAT_SI8 "%lld"
-#define FORMAT_UI8 "%llu"
-#endif
 ```
 
 In order to use the macros, KT uses some macros for printing debug information to the console using C++ variadic macros.
 
 ```C++
-#if SEAM >= SEAM_0_0_2
-// Dependencies:
-#include "example1.h"
-#include "example2.h"
-// End dependencies.
-#if SEAM == SEAM_0_0_2
-#define PRINTF(format, ...) printf(format, __VA_ARGS__)
-#define PRINT(item) Print(item)
-#else
-#define PRINTF(x, ...)
-#define PRINT(item)
-#endif
-#endif
+
 ```
 
 When you see PRINTF or PRINT in all caps, this means this is debug information for this specific seam. In order for this system to work, if there are dependencies, they must be included **BEFORE** the `#if SEAM == SEAM_0_0_2` section. The reason for this becomes evident when the order is reversed because the macros will get defined multiple times and you'll end up printing debug info from other seams.
@@ -297,7 +225,7 @@ The Printer is a utility for printing UTF-8, UTF-16, and UTF-32 strings. The cla
 ### Printer Example
 
 ```C++
-#include <kabuki/crabs/tstr.h>
+#include <kabuki/crabs/tutf.h>
 enum { kSize = 1024 };
 char buffer[kSize + 1];
 UTF8 utf (buffer, kSize);
@@ -339,10 +267,6 @@ In Crabs there a difference between an Console and a Terminal. A Crabs Console i
 
 ## License
 
-Kabuki Toolkit Cookbook Copyright (C) 2018 Cale McCollough <<[mailto:cale.mccollough@gmail.com](cale.mccollough@gmail.com)>> <<[https://calemccollough.github.io](https://calemccollough.github.io)>>
+Copyright 2014-2018 (C) [Cale McCollough](https://calemccollough.github.io). All rights reserved (R).
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
+This is a free and open-source document, the Document, that was written by and contains intellectual property that belongs to Cale McCollough. The Document consists of documents, files, source code, technology design files, trade secrets, art, and other content contained this file, folder and engineering-invention-startups GitHub repository, the Repository. The Document is published under a generic non-commercial open-source license, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository or by email to Cale McCollough at [calemccollough@gmail.com](mailto:calemccollough@gmail.com) to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Cale McCollough. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

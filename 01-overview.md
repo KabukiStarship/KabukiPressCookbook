@@ -106,15 +106,15 @@ Crabs is a Virtual Machine Framework that uses some simple rules for how to dete
 
 ASCII Script is the reference Script API. ASCII Script is responsible for dictating the SCRIPT Protocol SDNP features such as handling keys, function parameters and arguments, and erroneous data. When feature is introduced to the SCRIPT Protocol, the feature must have a defined ASCII Script implementation. This does not mean that is the only implementation, only that it is the reference implementation. Feel free to make as many implementations as you would like; gold stars going to all who get AI to write it's own implementation.
 
-## [1.7] `Modern C++`
+## [1.7] `Modern Embedded-C++`
 
-`Modern C++` isn't just a buzz-word, it's a way of life. `Modern C++` means many things, but arguably most importantly that:
+`Modern Embedded-C++` isn't just a buzz-word, it's a way of life. `Modern C++` means many things, but arguably most importantly that:
 
 1.  A detailed best practice style guide and coding conventions are used. **✓**
 2.  The code uses C++1x language features **where appropriate**. **✓**
 3.  The code performs as much functionality at compile time as possible. **✓**
 4.  The code uses a standardized set of general purpose data structures such as std or crabs. **✓**
-6.  Code repositories use Issue Driven Development or competing best practice in order to remain agile and the master branch always passes an automated unit test script. **/**
+6.  Code repositories use Issue Driven Development or competing best practice in order to remain agile and the master branch with Continuous Integration Testing. **/**
 7.  The code uses *Stack Programming* techniques to minimizes the use of dynamic memory by keeping as much data as possible in the CPU registers and on the hardware-assisted stack. **✓**
 8.  Smart pointers are used when dynamic memory is required unless performance is critical. **✓**
 10. Primary SDK is programed with cross-platform with cross-language bindings. **/**
@@ -204,10 +204,6 @@ The Store and Inventory Library contains a few classes for creating virtual inve
 
 ## License
 
-Kabuki Toolkit Cookbook Copyright (C) 2018 Cale McCollough <<[mailto:cale.mccollough@gmail.com](cale.mccollough@gmail.com)>> <<[https://calemccollough.github.io](https://calemccollough.github.io)>>
+Copyright 2014-2018 (C) [Cale McCollough](https://calemccollough.github.io). All rights reserved (R).
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
+This is a free and open-source document, the Document, that was written by and contains intellectual property that belongs to Cale McCollough. The Document consists of documents, files, source code, technology design files, trade secrets, art, and other content contained this file, folder and engineering-invention-startups GitHub repository, the Repository. The Document is published under a generic non-commercial open-source license, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository or by email to Cale McCollough at [calemccollough@gmail.com](mailto:calemccollough@gmail.com) to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Cale McCollough. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
