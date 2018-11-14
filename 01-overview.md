@@ -39,8 +39,10 @@ This overview chapter will briefly explain the:
     6. [Kabuki Toolkit](#16-kabuki-toolkit)
     7. [Exercises](#17-exercises)
 	4. [Mission and Vision](#14-mission-and-vision)
-2. [Seam Trees](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-seam-trees.md)
-3. [The Magical Crabs](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/03-the-magical-crabs.md)
+2. [Seam Trees](02-seam-trees.md)
+3. [The Magical Crabs](03-the-magical-crabs.md)
+  1. [ASCII Objects and the ASCII Factory](03-the-magical-crabs.md#31-ascii-objects-and-the-ascii-factory)
+  2. [Universal Text Formatter](03-the-magical-crabs.md#32-universal-text-formatter)
 
 ## [1.2] License
 
@@ -200,7 +202,60 @@ Projects, Tasks, and Scheduling Library contains tools for creating project tree
 
 The Store and Inventory Library contains a few classes for creating virtual inventories and assigning prices to items.
 
-## [1.9] Exercises
+## [1.9] Script2 C++ Style Guide
+
+The Script2 C++ Style Guide is a modified version of the Google C++ Guide that can be found at:
+
+[https://github.com/kabuki-starship/script2/tree/master/docs/style_guide](https://github.com/kabuki-starship/script2/tree/master/docs/style_guide)
+
+Major differences between the Google and Script2 C++ Style Guides are:
+
+* Allowance of all uppercase public member names.
+* Doxygen comment style guide.
+* @todo Update Google C++ Style Guide vs Script2 C++ Style Guide difference list.
+
+## [1.10] Hungarian Notation UML Templates
+
+Hungarian notation is a naming convention in which the name of the class implies what data type is used to store the data. Post Hungarian Notation places the class name before the type name(s); for example `FooInt32 ()` implies that the function foo returns an `int32_t` type. Pre-Hungarian Notation places the type name before the class name; for example `Int32Foo ()`. The default endianness of Hungarian notation is Post-Hungarian notation.
+
+F2 Software supports the use of Hungarian Notation to incorporate templated objects into Compliant UML Models. F2 software reserves the symbols UI, SI, and I for n-bit unsigned integer, signed integer, and either signed or unsigned integer, and T for a generic type. F2 software refers to all other data types as ASCII Data Types if an ASCII Data Type exists for that type.
+
+```C++
+// Class Foo_UI_SI_I with function Foo_SI2 translates to the following C++ class:
+
+template<typename UI, typename SI, typename I>
+struct TFoo {
+    UI one;
+    SI two;
+    I  three;
+
+    Foo (UI one, SI two, I three) :
+        one   (one  ),
+        two   (two  ),
+        three (three) {
+    }
+
+    template<typename Char>
+    const Char* Bar () {
+      static const Char kString[] = { 'A', 'S', 'C', 'I', 'I', '\0' };
+      return kString;
+    }
+};
+
+std::cout << Foo<uint32_t, int32_t, int16_t> (1, 2, 3).Bar<char> ();
+```
+
+## [1.11] C Structs and CFacade
+
+C is not UML compliant because it is not object oriented. F2 incorporates C into UML using CFacade(s) What this means is that the c module tag is used as an object in a UML model. In the code base there is no CFacade object, it's just a graphical representation for use in UML diagrams to better support cross-platform and cross-language programming.
+
+In order to distinguish between a C-ABI struct and a C++ object file, the C prefix is added to every C struct, but C++ objects to not use this convention, which helps distinguish between C and C++ functionality.
+
+## [1.12] The Assembly Line Boundary
+
+An assembly in Assembly programming and C/C++ is a set of source code compiled into a single contiguous block of executable code using the C or similar calling convention. There are only two primary types of assemblies, precompiled libraries and executable files. The rule in C++ for libraries and DLLs is that a precompiled library may not include any other precompiled libraries, but a executable file may incorporate multiple precompiled libraries. This is because of the way that C++ does name mangling and setups up the static memory.
+
+## [1.13] Exercises
 
 **1**.) Explore the Script repository and read the SCRIPT Specification RFC at https://github.com/kabuki-starship/script.
 
