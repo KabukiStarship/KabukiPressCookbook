@@ -116,6 +116,8 @@ print2 << "Testing " << 1 << ", 2, " << '3';
 
 In Crabs there a difference between an Console and a Terminal. A Crabs Console is like the normal console that is usually also called a Terminal. A Crabs Terminal is specially a serial stream that runs the SCRIPT Protocol.
 
+[<< Seam Trees](02-seam-trees.md) **|** [Foo >>](04-foo.md)
+
 ## License
 
 Copyright 2014-2018 (C) [Cale McCollough](https://calemccollough.github.io). All rights reserved (R).

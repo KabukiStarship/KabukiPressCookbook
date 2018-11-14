@@ -273,6 +273,8 @@ An assembly in Assembly programming and C/C++ is a set of source code compiled i
 
 **b**.) Choose a project to use as the starting point for your project, copy and paste it into your workspace, rename the project folder and files, and start hacking on your project.
 
+**|** [Seam Trees >>](02-seam-trees.md)
+
 ## License
 
 Copyright 2014-2018 (C) [Cale McCollough](https://calemccollough.github.io). All rights reserved (R).
