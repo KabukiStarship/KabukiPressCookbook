@@ -206,7 +206,9 @@ The Store and Inventory Library contains a few classes for creating virtual inve
 
 The Script2 C++ Style Guide is a modified version of the Google C++ Guide that can be found at:
 
-[https://github.com/kabuki-starship/script2/tree/master/docs/style_guide](https://github.com/kabuki-starship/script2/tree/master/docs/style_guide)
+[https://github.com/kabuki-starship/script2/tree/master/docs/style_guide/script_style_guide.md
+](https://github.com/kabuki-starship/script2/tree/master/docs/style_guide/script_style_guide.md
+)
 
 Major differences between the Google and Script2 C++ Style Guides are:
 

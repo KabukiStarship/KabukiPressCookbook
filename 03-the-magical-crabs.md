@@ -61,7 +61,7 @@ int main () {
 }
 ```
 
-## [2.19] Universal Text Formatter
+## [3.2] Universal Text Formatter
 
 F2 uses a ultra-fast text printing framework designed to work similar to the C++ `std::cout` and provide the formatting functionality to `printf` using some utility classes. The most noticeable difference between the operation of the two are that the UTF uses a pointer to the first and last Unicode character in a buffer.
 
