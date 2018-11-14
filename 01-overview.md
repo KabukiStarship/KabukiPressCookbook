@@ -39,8 +39,8 @@ This overview chapter will briefly explain the:
     6. [Kabuki Toolkit](#16-kabuki-toolkit)
     7. [Exercises](#17-exercises)
 	4. [Mission and Vision](#14-mission-and-vision)
-2. [F2 Foundational Framework](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-f2-foundational-framework.md)
-3. [Chinese Room Abstract Stack Machine](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/03-chinese_room_abstract_stack_machine.md)
+2. [Seam Trees](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-seam-trees.md)
+3. [The Magical Crabs](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/03-the-magical-crabs.md)
 
 ## [1.2] License
 

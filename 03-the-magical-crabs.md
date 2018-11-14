@@ -18,11 +18,17 @@
 
 # [3] Crabs
 
-The Chinese Room Abstract Stack Machine's operation is...
+The easiest way to describe Crabs is that it's a generic stack machine that can work on either pen-and-paper or on a computer, and it uses the Automaton Standard Code for Information Interchange (ASCII) B-Sequences (BSQ) for input and output parameters and arguments. If you haven't already, it is highly recommended to read the ASCII Data Specification because the data types are used all over the place; the spec can be found at:
 
-## [3.1] Philosophical Background and Terminology
+[https://github.com/kabuki-starship/script2/blob/master/docs/ascii_data_specification_rfc.md](https://github.com/kabuki-starship/script2/blob/master/docs/ascii_data_specification_rfc.md)
 
+## [3.1] The ASCII Factory
 
+Memory handling in Crabs is abstracted away using the ASCII Factory using a single C-function pointer that returns a pointer to a buffer using the prototype:
+
+```C++
+typedef UIW* (*AsciiFactory)(UIW* buffer, UIN function, void* ptr);
+```
 
 ## License
 
