@@ -35,7 +35,7 @@ This is the official repository for book Script and Kabuki Toolkit Cookbook, a b
 
 ## Quick Links
 
-* [SCRIPT Script (Script2)](https://github.com/kabuki-starship/kabuki-script/01-Overview) - *Free Markdown version of the book.*
+* [Script2 and Kabuki Toolkit Overview](01-overview.md) - *Free Markdown version of the book.*
 * [Kabuki Toolkit](https://github.com/kabuki-starship/kabuki-toolkit) - *Official Kabuki Toolkit GitHub repository.*
 * [Script2 and SCRIPT Specification RFC](https://github.com/kabuki-starship/script2/blob/master/docs/script_specification_rfc.md)
   - *Serial Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification Release for Comment.*
