@@ -15,10 +15,9 @@
                 `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
 ```
 
-
 # [1] Overview
 
-This book is about the Kabuki Toolkit Modern-C++ Firmware-to-Software Development Kit (**F2SDK**) and tool set, a Software-defined Networking Protocol (SDNP) called Searle's Chinese Room, Interprocess, and Telemetry (**SCRIPT**) Protocol that runs SCRIPT Scripts (**script^2**) on the world-famous Chinese Room Abstract Stack Machine (**crabs**).
+This book is about the Kabuki Toolkit Modern-C++ Firmware-to-Software Development Kit (**F2SDK**) and tool set, a Software-defined Networking Protocol (SDNP) called the Serial Chinese Room, Interprocess, and Telemetry (**SCRIPT**) Protocol that runs SCRIPT Scripts (**script^2**) on the world-famous Chinese Room Abstract Stack Machine (**crabs**).
 
 The audience of this book is intermediate to expert programmers, though beginning C++ programmers may still find the book useful and will teach you Modern-C++ the right way. You would want to read this book if you're trying to learn Kabuki Toolkit or Script, or if you are interested on how to build Modern C++ SDKs. The book will walk you through the F2 Foundational Framework seams (@see Chapter 2) that build Kabuki Toolkit from the Crabs Embedded-C++1x core to F2 Foundational Framework to a fully-featured Firmware-to-Software Development Kit (F2SDK) with cross-platform and cross-language bindings.
 
@@ -87,8 +86,7 @@ Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification, or Sc
 
 * ASCII Data Types
 * Universal Polar Addressing
-* SCRIPT Protocol, Crabs, and ASCII Script
-* ICAN3 Distributed Nomination System
+* Crabs and SCRIPT Protocol
 
 ### [1.6.b] ASCII Data Types
 

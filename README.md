@@ -1,5 +1,17 @@
 ```
-  /\
+        /$$$$$$                      /$$             /$$      /$$$$$$
+       /$$__  $$                    |__/            | $$     /$$__  $$
+      | $$  \__/  /$$$$$$$  /$$$$$$  /$$  /$$$$$$  /$$$$$$  |__/  \ $$
+      |  $$$$$$  /$$_____/ /$$__  $$| $$ /$$__  $$|_  $$_/    /$$$$$$/
+       \____  $$| $$      | $$  \__/| $$| $$  \ $$  | $$     /$$____/
+       /$$  \ $$| $$      | $$      | $$| $$  | $$  | $$ /$$| $$      
+      |  $$$$$$/|  $$$$$$$| $$      | $$| $$$$$$$/  |  $$$$/| $$$$$$$$
+       \______/  \_______/|__/      |__/| $$____/    \___/  |________/
+                                        | $$                  .
+                                        | $$                  |
+                                        |__/        ,-: ;-. ,-|
+                                                    | | | | | |
+  /\                                                `-` ' ' `-'
  ( /   @ @    ()   _  __     _           _    _   _____           _ _    _ _   
   \\ __| |__  /   | |/ /__ _| |__  _   _| | _(_) |_   _|__   ___ | | | _(_) |_
    \/   "   \/    | ' // _` | '_ \| | | | |/ / |   | |/ _ \ / _ \| | |/ / | __|
@@ -8,11 +20,11 @@
   / /-`---'-\ \  
    /         \                     ♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪
 
-                 ___                \     \                    \    
-               .'   \   __.    __.  |   , | ___    __.    __.  |   ,
-               |      .'   \ .'   \ |  /  |/   \ .'   \ .'   \ |  /
-               |      |    | |    | |-<   |    ` |    | |    | |-<  
-                `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
+                ___                \     \                    \    
+              .'   \   __.    __.  |   , | ___    __.    __.  |   ,
+              |      .'   \ .'   \ |  /  |/   \ .'   \ .'   \ |  /
+              |      |    | |    | |-<   |    ` |    | |    | |-<  
+               `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
 ```
 
 ![Under Construction Image](https://github.com/kabuki-starship/kabuki-toolkit/wiki/under_construction.png)
@@ -23,15 +35,16 @@ This is the official repository for book Script and Kabuki Toolkit Cookbook, a b
 
 ## Quick Links
 
-* [Kabuki Script](https://github.com/kabuki-starship/kabuki-script/01-Overview) - *Free Markdown version of the book.*
+* [SCRIPT Script (Script2)](https://github.com/kabuki-starship/kabuki-script/01-Overview) - *Free Markdown version of the book.*
 * [Kabuki Toolkit](https://github.com/kabuki-starship/kabuki-toolkit) - *Official Kabuki Toolkit GitHub repository.*
-* [Script Specification RFC](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md)
+* [Script2 and SCRIPT Specification RFC](https://github.com/kabuki-starship/script2/blob/master/docs/script_specification_rfc.md)
   - *Serial Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification Release for Comment.*
 
 # Book Chapters
 
 1. [Overview](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/01-overview.md)
-2. [F2 Foundational Framework](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-f2-foundation-framework.md)
+2. [Seam Trees](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-seam-trees.md)
+3. []
 
 ## Author
 
