@@ -15,14 +15,14 @@
 Seam Tree Testing is a unit testing and mocking methodology for C/C++ and languages that support conditional compilation where seams are enumerated 1-N, where N is the number of seams, and a tree of seams is created with related seams grouped in nodes and leaves contain groups of tests.
 
 * Modified Google C++ Style Guide.
-* Rapid compiling library format.
-* Fastest number printing and scanning algorithms and associated algorithms.
+* Rapid compiling library format using 3-file translation units with isolated templates.
+* Ultra-fast number printing and scanning algorithms and associated algorithms.
 * Seam Trees maximize test quality by quickly pealing back and decoupling software layers and enumerating work to be done to minimize development and maintenance costs.
 * Minimized set of common console IO functions for concise debug macros.
 * Utilities for benchmarking algorithms.
 * Integer Not-a-Numbers (NaNs) and default integer upper bounds.
 * ASCII Data Types.
-* Nothing else so you can embed F2 into research papers and quick little ditties.
+* Nothing else so you can embed Script2 into research papers and quick little ditties.
 
 ## [2.1] F2 C++ Style Guide
 

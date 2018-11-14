@@ -44,7 +44,7 @@ This is the official repository for book Script and Kabuki Toolkit Cookbook, a b
 
 1. [Overview](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/01-overview.md)
 2. [Seam Trees](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-seam-trees.md)
-3. []
+3. [String Processing](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/03-string-processing.md)
 
 ## Author
 

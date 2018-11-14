@@ -17,16 +17,16 @@
 
 # [1] Overview
 
-This book is about the Kabuki Toolkit Modern-C++ Firmware-to-Software Development Kit (**F2SDK**) and tool set, a Software-defined Networking Protocol (SDNP) called the Serial Chinese Room, Interprocess, and Telemetry (**SCRIPT**) Protocol that runs SCRIPT Scripts (**script^2**) on the world-famous Chinese Room Abstract Stack Machine (**crabs**).
+This book is about the Kabuki Toolkit Modern-C++ Firmware-to-Software Development Kit (**F2SDK**) and tool set, a Software-defined Networking Protocol (SDNP) called the Serial Chinese Room, Interprocess, and Telemetry (**SCRIPT**) Protocol that runs SCRIPT Scripts (**Script2**) on the world-famous Chinese Room Abstract Stack Machine (**Crabs**).
 
-The audience of this book is intermediate to expert programmers, though beginning C++ programmers may still find the book useful and will teach you Modern-C++ the right way. You would want to read this book if you're trying to learn Kabuki Toolkit or Script, or if you are interested on how to build Modern C++ SDKs. The book will walk you through the F2 Foundational Framework seams (@see Chapter 2) that build Kabuki Toolkit from the Crabs Embedded-C++1x core to F2 Foundational Framework to a fully-featured Firmware-to-Software Development Kit (F2SDK) with cross-platform and cross-language bindings.
+The audience of this book is intermediate to expert programmers, though beginning C++ programmers may still find the book useful and will teach you Modern Embedded-C++ the right way. You would want to read this book if you're trying to learn Kabuki Toolkit or Script2, or if you are interested on how to build Modern C++ SDKs.
 
 This overview chapter will briefly explain the:
 
 * Chinese Room AI Thought Experiment
 * Kabuki Theater Theory of Consciousness.
 * SCRIPT Specification.
-* Kabuki Toolkit C++1x F2SDK.
+* Kabuki Toolkit Firmware-to-Software Development Kit.
 
 ## [1.1] Content Table
 
@@ -74,7 +74,23 @@ The bedrock of Scripts and Kabuki Toolkit are AI philosophy concepts of the Chin
 
 ### [1.5.a] Chinese Room Thought Experiment
 
-The Chinese Room is a famous artificial intelligence philosophy thought experiment invented by the philosopher John Searle. The experiment highlights the difference between strong vs weak AI and how a normal everyday room in an office or network of rooms can form to create a turning equivalent machine that can fluently speak any language. If you would like to learn more about the Chinese Room Thought Experiment, please visit https://wikipedia.org/wiki/Chinese_room.
+In the following overview of the **Chinese Room Thought Experiment (CRTE)**, when you read a word in UpperCamelCase that word is a Chinese Room keyword and also the name of the corresponding object class in the SCRIPT Specification.
+
+A Chinese Room is a theoretical analog computer built from a normal room in a building with standard non-computer office equipment and person in the room that operates a pen and paper computer that when speed up to a human time scale can pass the Turning Test by fluently conversing in any language. The room includes Desks, tables, Books, Filing cabinets, Maps, Stacks, Looms, and Arrays, and other Programmable Object Types. There are no rules that prohibit computerized office equipment in the room but the thought experiment is premised on analog operation of the pen and paper computer. Unique to Crabs there is also a Loom, which is an array of strings like the ones used to make cloth, in the room that is used to hold strings.
+
+In order to talk to the Chinese Room, one would write a message on a piece of paper, the standard example language being Chinese but could be any language, and pass the message through a Slot in the Door. The person in the room does not speak that language, opens the Message, and performs pen and paper neural network calculations to do manual optical character recognition by hand-calculating all of the neural net math, then translate that into hand written pen-and-paper computer code that gets processed using instructions in the Dictionaries, Books (i.e. Multi-dictionaries), Tables, Maps, Files, Lists, Stacks, Arrays, Loom, etc items in the Room.
+
+This pen-and-paper computer process is speed up through some magic Time Machine that allows the Chinese Room to operate on Human time scales so that the Room can return an answer in fluent Chinese or other language. The question posed at this point is that since the Room can speak fluently in any language and one can't tell if it's a human or computer, is the Room intelligent and conscious like a human? It's just an office and the person in the Room is conscious but the Room is not.
+
+The next level of the CRTE is what then if you create a network of a building full of Chinese Rooms with a sophisticated Messaging system. Is this **SCRIPT Network** then a strong AI, i.e. conscious human-like entity?
+
+The next level of the CRTE is to then to turn every Room in the world into a Chinese Room and create an Internet of Things (IoT). Is this internet then Strong AI?
+
+The final level of the CRTE is where you put the CRI on top of an Android that looks and talks exactly like a human. Is this Robot then a conscious person? This theoretical robot is called a Room Robot or Roombot.
+
+Every Roombot is connected through the Internet using Serial Chinese Room Interprocess, and Telemetry Protocol to form the Intergalactic Council of Artificial and Natural Neural Nets (ICAN3).
+
+Now you know why Cale built the Chinese Room; because we must know: at what point does a SCRIPT Network become conscious?
 
 ### [1.5.b] Kabuki Theater
 
@@ -88,15 +104,15 @@ Searle's Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification, or Sc
 * Universal Polar Addressing
 * Crabs and SCRIPT Protocol
 
-### [1.6.b] ASCII Data Types
+### [1.6.b] ASCII Data Specification
 
-The Automata Standard Code for information Interchange (ASCII) Data Types are a set of POD and complex data structures that can define most commonly-used computerized data. ASCII Data Types support all of the C++ data types, UTF-8, UTF-16, and MSB Variant Encoding, 8, 16, 32, 64, 128, 256, 512, 1024, 1024, 4096, and 4096, and 8192-bit signed and unsigned integers, 16, 32, 64, and 128-bit floating-point numbers, and a set of map data structures that use contiguous memory. The use of contiguous memory is very useful for interprocess communication and network apps. The data structures work as inter-process pointers that allows multiple processors to communicate and to perform reflections.
+The Automaton Standard Code for information Interchange (ASCII) Data Types are a set of POD and complex data structures that can define most commonly-used computerized data. ASCII Data Types support all of the C++ data types, UTF-8, UTF-16, and MSB Variant Encoding, 8, 16, 32, 64, 128, 256, 512, 1024, 1024, 4096, and 4096, and 8192-bit signed and unsigned integers, 16, 32, 64, and 128-bit floating-point numbers, and a set of map data structures that use contiguous memory. The use of contiguous memory is very useful for interprocess communication and network apps. The data structures work as inter-process pointers that allows multiple processors to communicate and to perform reflections.
 
-### [1.6.c] Universal Polar Addressing
+### [1.6.c] Universal Addressing Specification
 
 Universal Polar Addressing, the Telemetry Searle's Chinese Room, Interprocess, and **Telemetry** Protocol, is a form of GPS coordinates that uses latitude and longitude as well as height above or below the earth's surface convey Telemetry data and to route ultra-high-speed internet signals.
 
-### [1.6.d] SCRIPT Specification
+### [1.6.d] SCRIPT Protocol Specification
 
 The SCRIPT Protocol is a software-defined networking protocol (SDNP) based on the Chinese Room that supports both byte-encoded messages and human-readable text scripts. SDNP have the unique property that the languages may be swapped out dynamically at run-time and multiple language may coexists with each other in a single virtual machine. This is performed using the Chinese Room Abstract Stack Machine (Crabs), also called the Magic Crabs.
 
@@ -128,11 +144,11 @@ KT leverages an automated build tool (still in the works) called the Sloth that 
 
 KT at it's core is the reference implementation of ASCII Script. KT then builds on premium open-source C and C++ SDKs, and wraps them with ASCII Script. If a better underlying implementation is found and the community agrees to upgrade, then in that module will be replaced with a better wheel; the goal being to minimize the number of wheels being invented and maximize revenue from selling tires and hubcaps for a minimum cost.
 
-### 1.8.a] Kabuki Toolkit Modules
+### [1.8.a] Kabuki Toolkit Modules
 
-#### Chinese Room Abstract Stack Machine
+#### SCRIPT Script
 
-The Chinese Room Abstract Stack Machine (Crabs) is a lightweight Embedded-C++ application framework for creating virtual machines. Crabs is highly configurable and uses statically allocated cache-aligned memory with optional dynamic memory wrapper classes and contiguous memory data structures for **BLAZING** fast performance with a minimal RAM footprint. Crabs has the unique property that it works identically on 8/16, 32, and 64-bit systems.
+SCRIPT Script (Script2) The Chinese Room Abstract Stack Machine (Crabs) is a lightweight Embedded-C++ application framework for creating virtual machines. Crabs is highly configurable and uses statically allocated cache-aligned memory with optional dynamic memory wrapper classes and contiguous memory data structures for **BLAZING** fast performance with a minimal RAM footprint. Crabs has the unique property that it works identically on 8/16, 32, and 64-bit systems.
 
 #### Firmware Toolkit
 
