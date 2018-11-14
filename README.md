@@ -40,12 +40,6 @@ This is the official repository for book Script and Kabuki Toolkit Cookbook, a b
 * [Script2 and SCRIPT Specification RFC](https://github.com/kabuki-starship/script2/blob/master/docs/script_specification_rfc.md)
   - *Serial Chinese Room, Interprocess, and Telemetry (SCRIPT) Specification Release for Comment.*
 
-# Book Chapters
-
-1. [Overview](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/01-overview.md)
-2. [Seam Trees](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/02-seam-trees.md)
-3. [String Processing](https://github.com/kabuki-starship/script-and-kabuki-toolkit-cookbook/blob/master/03-string-processing.md)
-
 ## Author
 
 * [Cale McCollough](https://kabuki-starship.github.io) <[cale.mccollough@gmail.com](mailto:cale.mccollough@gmail.com)>
