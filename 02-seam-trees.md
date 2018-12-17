@@ -14,22 +14,113 @@
 
 Seam Tree Testing is a unit testing and mocking methodology for C/C++ and languages that support conditional compilation where seams are enumerated 1-N, where N is the number of seams, and a tree of seams is created with related seams grouped in nodes and leaves contain groups of tests.
 
-#### 2.1 Rules Against Seam Gerrymandering
+#### 2.1 Seam Gerrymandering
 
 Seam Gerrymandering is, as the name implies, very similar to political district Gerrymandering, only it is when a seam covers regions that are representative of the seam district. Seams should not be Gerrymandered in such a way to the seam is falsely represented and should have a proper demo apps. Instead, modules should be decomposed into a tree structure, assigned permanent Seam Tree Node Index, and Scrums collapsed into SPRINT(s) upon release. The purpose of this system is to avoid sweeping dirt around on the forest floor and instead sweep the dirt out of the scrums.
 
+Your primary inspiration to not Gerrymander seams is that you want to get your commit count as high as possible as quickly as possible so it's best to make small scrums and to keep a moderate backflow of very small tasks to do when you have some extra time.
+
 ### [2.2] Seam Tree Macros
 
-Script2 software uses a replacement for the standard library that rapidly compiles and does not require use of precompiled libraries. The Script2 convention however does use the Microsoft standard `pch.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the macros using the `<script2/config.h>` file. Script2 software provides the precompiled header file in the $(ProjectDir)\ file.
+Script2 software uses a replacement for the C++ std library that rapidly compiles and does not require use of precompiled libraries. The Script2 convention however does use the Microsoft standard `pch.h` to `#include <cstdint>`, `#include <cstdarg>`, and to define some compiler-specific stuff and the macros using the `<script2/global_config.inl>` file. Script2 software provides the precompiled header file in the $(ProjectDir)\ file.
+
+#### `global_config.inl`
 
 ```C++
+#ifndef INCLUDED_SCRIPT2_GLOBAL_CONFIG
+#define INCLUDED_SCRIPT2_GLOBAL_CONFIG 1
 
+#define API
+
+#include <cstdarg>
+#include <cstdint>
+
+#define UTF8 1
+#define UTF16 2
+#define UTF32 3
+#define USING_UTF UTF8
+
+typedef unsigned int uint;
+typedef int type_t;
+typedef unsigned int UIN;
+typedef uintptr_t UIW;
+typedef intptr_t SIW;
+
+typedef char CH1;
+typedef char16_t CH2;
+typedef char32_t CH4;
+typedef wchar_t CHW;
+
+// ASCII POD Types
+typedef int8_t SI1;
+typedef uint8_t UI1;
+typedef int16_t SI2;
+typedef uint16_t UI2;
+// typedef half HLF;
+typedef bool BOL;
+typedef int32_t SI4;
+typedef uint32_t UI4;
+typedef float FLT;
+typedef int32_t TMS;
+typedef int64_t TME;
+typedef int64_t SI8;
+typedef uint64_t UI8;
+typedef double DBL;
+
+typedef CH1 CHT;  //< Default Char type.
+
+enum {
+  kWordBitCount = (sizeof(void*) == 2)
+                      ? 1
+                      : (sizeof(void*) == 4) ? 2 : (sizeof(void*) == 8) ? 3 : 0,
+  kWordBitsMask = sizeof(void*) - 1,
+  kStackCountMaxDefault = 16,
+  kObjSizeBuffer = 15,
+  kObjSizeDefault = 256,
+};
+
+#if COMPILER == VISUAL_CPP
+#define FORMAT_SI8 "%I64i"
+#define FORMAT_UI8 "%I64u"
+#else
+#define FORMAT_SI8 "%lld"
+#define FORMAT_UI8 "%llu"
+#endif
+
+#if PLATFORM == WINDOWS
+#define APP_EXIT_SUCCESS 0
+#define APP_EXIT_FAILURE 1
+#else
+#define APP_EXIT_SUCCESS 0
+#define APP_EXIT_FAILURE 1
+#endif
+
+#define _0_0_0__00 1   //< rng
+#define _0_0_0__01 2   //< itos_and_stoi
+#define _0_0_0__02 3   //< ascii_strings_and_socket
+#define _0_0_0__03 4   //< ftos_and_stof
+#define _0_0_0__04 5   //< ascii_clock
+#define _0_0_0__05 6   //< ascii_stack
+#define _0_0_0__06 7   //< ascii_array
+#define _0_0_0__07 8   //< ascii_loom
+#define _0_0_0__08 9   //< ascii_table
+#define _0_0_0__09 10  //< ascii_list
+#define _0_0_0__10 11  //< ascii_map
+#define _0_0_0__11 12  //< ascii_book
+#define _0_0_0__12 13  //< ascii_dictionary
+#define _0_0_0__13 14  //< crabs
+#define SEAM_N 14
+#endif                 //< #ifndef INCLUDED_SCRIPT2_GLOBAL_CONFIG
 ```
 
-In order to use the macros, KT uses some macros for printing debug information to the console using C++ variadic macros.
+#### `pch.h`
 
 ```C++
+#pragma once
 
+#include "global_config.inl"
+
+#define SEAM _0_0_0__05
 ```
 
 When you see PRINTF or PRINT in all caps, this means this is debug information for this specific seam. In order for this system to work, if there are dependencies, they must be included **BEFORE** the `#if SEAM == _0_1_2__34` section. The reason for this becomes evident when the order is reversed because the macros will get defined multiple times and you'll end up printing debug info from other seams.
@@ -58,12 +149,12 @@ For each implementation file compiled, the compiler generates a translation unit
 
 Script2 Compliant software have unique implementation filenames named after the namespace name in modulename_translation format, where all modulename(s) are unique.
 
-#### Example
+#### Example `cfoo.h`
 
 ```C++
 namespace Foo {
 namespace Bar {
-  struct Go;
+  struct CGo;
 };  //<
 }   //< namespace Bar
 }   //< namespace Foo
@@ -82,9 +173,9 @@ Usage of assert statements in Script2 can be used for only the development phase
 
 Occasionally there will be an environmental hazard when you're riding that causes you to fall off the bike, such as ice or a bad curve. You can have to options, you can either ride with training wheels your entire life, slowing you down, or you can put up with the occasional fall by riding without the them and not be slowed down. This depends on the application. Some applications require minimized ROM footprint. In these circumstances, you may want to make assert statements only during debug phase and run without the training wheels because it doesn't matter if it messes up in operation because of another recover mechanism; or you don't care if you ride with the training wheels on because you're not going fast and you just need to never fall down. That is the design of the assert system in KT. The key edge case to keep in mind is the bit flip, which will be the most common non-critical bug; if the system is crashing for anything other than a bit flip then you have other problems. The chance of a bit flip is very low, but the chance of a bit flip causing a null pointer substantially lower, only N/(2^N), where N is the number of bits in a word. Null pointers an excellent example of training wheels that can generally be taken off after the system is working.
 
-## [2.12] C ABI
+## [2.12] C-ABI
 
-A *C Application Binary Interface* (*ABI*) helps with the creation of cross-language bindings and dramatic reduction of compile time. KT uses a modern system of concealing library template implementations behind a C ABI with explicit data types, and using modern C++1x wrappers. KT does not at this time provide a C99 interface but future versions will. The C ABI can be found in the `public.h` files.
+A *C Application Binary Interface* (*CABI* or *Cabi*) helps with the creation of cross-language bindings and dramatic reduction of compile time. KT uses a modern system of concealing library template implementations behind a C ABI with explicit data types, and using modern C++1x wrappers. KT does not at this time provide a C99 interface but future versions will. The C ABI can be found in the `public.h` files.
 
 ## [2.13] Framework for C++ Templates
 
@@ -121,24 +212,6 @@ T GetSomething () { return 0; }
 // Public interface
 uint8_t GetSomethingUI1 () { return 0; }
 float GetSomethingFLT () { return 0.0f; }
-```
-
-## [2.18] Static Arrays
-
-Static arrays in Script2 are handled using wrapper functions that hide the static data from the headers that get compiled into each translation unit. Whenever the size of the array is used in the software, the wrapper function shall return a pointer to the array and the reference to the size variable passed in as a parameter.
-
-***Example***
-
-```C++
-// In header:
-const int* Foo (int& bar);
-
-// In implementation:
-const int* Foo (int& bar) {
-  static const kFooBar[] = { 1, 2, 3 };
-  bar = 3;
-  return kFooBar;
-}
 ```
 
 [<< Overview](01-overview.md) **|** [The Magical Crabs >>](03-the-magical-crabs.md)
