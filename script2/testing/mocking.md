@@ -1,8 +1,12 @@
-# [KabukiPress Cookbook](../readme.md)
+# [KabukiPress Cookbook](../../readme.md)
 
-## Bibliography
+## [Script2](../readme.md)
 
-* [Source Name] – [Article Name]. (online - [URL] Accessed [date accessed])
+### [Testing](./readme.md)
+
+#### Mocking
+
+This is a stub.
 
 ## License
 
