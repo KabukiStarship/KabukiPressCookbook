@@ -1,12 +1,12 @@
-#KabukiPress Cookbook
+# KabukiPress Cookbook
 
 ```AsciiArt
   /\
- ( /   @ @    ()   _  __     _           _    _   _____           _ _    _ _
-  \\ __| |__  /   | |/ /__ _| |__  _   _| | _(_) |_   _|__   ___ | | | _(_) |_
-   \/   "   \/    | ' // _` | '_ \| | | | |/ / |   | |/ _ \ / _ \| | |/ / | __|
-  /-|       |-\   | . \ (_| | |_) | |_| |   <| |   | | (_) | (_) | |   <| | |_
- / /-\     /-\ \  |_|\_\__,_|_.__/ \__,_|_|\_\_|   |_|\___/ \___/|_|_|\_\_|\__|
+ ( /   @ @    ()   _  __     _           _    _ ____
+  \\ __| |__  /   | |/ /__ _| |__  _   _| | _(_)  _ \ _ __ ___  ___ ___
+   \/   "   \/    | ' // _` | '_ \| | | | |/ / | |_) | '__/ _ \/ __/ __|
+  /-|       |-\   | . \ (_| | |_) | |_| |   <| |  __/| | |  __/\__ \__ \
+ / /-\     /-\ \  |_|\_\__,_|_.__/ \__,_|_|\_\_|_|   |_|  \___||___/___/
   / /-`---'-\ \  
    /         \                     ♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪
 
@@ -17,7 +17,7 @@
                `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
 ```
 
-***A book on how to make intelligent connected apps, plugins, games, servers, and art with Script2 and Kabuki Toolkit.***
+***A book on how to make intelligent connected software, websites, books, and art with Script2, Kabuki Toolkit, and KabukiPress.***
 
 By Cale McCollough
 
