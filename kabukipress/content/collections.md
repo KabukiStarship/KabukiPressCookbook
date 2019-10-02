@@ -4,7 +4,7 @@
 
 ### Collections
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Posts](./posts.md) | [Next Section:Data Files >>](data_files.md)**
 

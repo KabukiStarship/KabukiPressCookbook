@@ -2,7 +2,7 @@
 
 ## Document Structure
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Chapter:Getting Started](../getting_started/readme.md) | [Next Section:Pages >>](pages.md)**
 

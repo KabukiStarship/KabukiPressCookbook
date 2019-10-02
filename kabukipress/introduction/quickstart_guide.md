@@ -4,6 +4,8 @@
 
 ### Quickstart Guide
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 **1.** Foo
 
 **[<< Previous Section:Getting Started](./readme.md) | [Next Section:Command Line Usage >>](./command_line_usage.md)**

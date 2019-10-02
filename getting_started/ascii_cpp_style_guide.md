@@ -4,6 +4,8 @@
 
 ### ASCII C++ Style Guide
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 The ASCII C++ Style Guide is a modified version of the Google C++ Guide that can be found at:
 
 [https://github.com/kabuki-starship/script2/tree/master/docs/style_guide/script_style_guide.md

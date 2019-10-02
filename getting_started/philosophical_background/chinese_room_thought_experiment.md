@@ -6,6 +6,8 @@
 
 #### Chinese Room Thought Experiment
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 In the following overview of the **Chinese Room Thought Experiment** (**CRTE**), when you read a word in UpperCamelCase that word is a Chinese Room keyword and also the name of the corresponding object class in the Script2 Specification.
 
 A Chinese Room is a theoretical analog computer built from a normal room in a building with standard non-computer office equipment and person in the room that operates a pen and paper computer that when speed up to a human time scale can pass the Turning Test by fluently conversing in any language. The room includes Desks, tables, Books, Filing cabinets, Maps, Stacks, Looms, and Arrays, and other Programmable Object Types. There are no rules that prohibit computerized office equipment in the room but the thought experiment is premised on analog operation of the pen and paper computer. Unique to Crabs there is also a Loom, which is an array of strings like the ones used to make cloth, in the room that is used to hold strings.

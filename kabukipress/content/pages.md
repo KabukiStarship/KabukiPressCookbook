@@ -4,7 +4,7 @@
 
 ### Pages
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Content](./readme.md) | [Next Section:Posts >>](posts.md)**
 

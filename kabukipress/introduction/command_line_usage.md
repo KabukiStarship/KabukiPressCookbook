@@ -4,7 +4,7 @@
 
 ### Command Line Usage
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Quickstart Guide](./quickstart_gude.md) | [Next Section:Configuration >>](./configuration.md)**
 

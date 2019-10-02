@@ -16,6 +16,8 @@
       ░     ░  ░     ░  ░       ░                  ░        ░  ░   ░  ░      ░
 ```
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 Seam Tree Testing is an in-order unit testing and mocking methodology where software is decomposed into seams enumerated 1-N, where N is the number of seams, and where a tree of test seams is created. Seam trees are useful in languages like C++ that support conditional compilation because the seams are enumerated and it allows developers to block out all of the code above a seam so you can focus on only one seam at a time. It also allows objects to be mocked before certain seams and to bring the production code up and running in stages.
 
 A seam, as the name implies, is similar to a seam in clothing where pieces of cloth join, but we should be able to switch out any piece of cloth that is the same shape to replace a piece of cloth. In the context of software, the test should have some fixed inputs and outputs and expected outputs and we should be able to switch the code out with other code and it will be functionally identical.

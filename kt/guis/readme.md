@@ -2,6 +2,8 @@
 
 ## [Graphical User Interfaces](./readme.md)
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 **[<< Previous Section:](./.md) | [Next Section: >>](./.md)**
 
 ## License

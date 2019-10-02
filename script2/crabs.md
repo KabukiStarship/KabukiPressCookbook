@@ -13,6 +13,7 @@
  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
 ```
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Summary](./summary.md) | [Next Section:Script2 >>](../script2/readme.md)**
 
