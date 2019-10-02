@@ -13,6 +13,8 @@
   /         \                                      dP
 ```
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 The **S**erial **C**hinese **R**oom, **I**nterprocess, and **T**elemetry (SCRIPT) Specification, or SCRIPT Spec for short, is a definition for a family of technologies based of the Chinese Room Thought Experiment and ASCII C0 Codes. Script2 is useful for creating all kinds of apps, games, operating systems, consumer electronics, computers, etc with. It was designed from scratch with a Sandwich Development Method to clean up and minimize the amount of code required to create apps as well as the memory and overhead processing using modern C++1x with cross-language bindings. Script2 specifies:
 
 * [ASCII Data Types](https://github.com/kabuki-starship/script2/tree/master/spec/data)

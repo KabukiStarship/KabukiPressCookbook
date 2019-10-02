@@ -26,7 +26,7 @@ By Cale McCollough
 1. [Getting Started](./getting_started/readme.md)
    1. [Preface](./getting_started/preface.md)
    1. [Mission and Vision](./getting_started/mission_and_vision.md)
-   1  [Quickstart Guide](./getting_started/quickstart_guide.md)
+   1. [Quickstart Guide](./getting_started/quickstart_guide.md)
    1. [Organization and Build System](./getting_started/organization_and_build_system.md)
    1. [Summary](./getting_started/summary.md)
    1. [Exercises](./getting_started/exercises.md)

@@ -2,7 +2,9 @@
 
 ## [Script2](../readme.md)
 
-### [String Processing](./readme.md)
+### String Processing
+
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 #### Uniprinter
 

@@ -1,5 +1,11 @@
 # [KabukiPress Cookbook](../readme.md)
 
+## [Script2](../readme.md)
+
+### Testing
+
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 **[<< Previous Section:](./.md) | [Next Section: >>](./.md)**
 
 ## License

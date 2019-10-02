@@ -1,5 +1,13 @@
 # [KabukiPress Cookbook](../readme.md)
 
+## [Kabuki Toolkit](../readme.md)
+
+### [Multi-user Systems](./readme.md)
+
+#### OAuth
+
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 **[<< Previous Section:](./.md) | [Next Section: >>](./.md)**
 
 ## License

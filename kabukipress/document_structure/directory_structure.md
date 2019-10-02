@@ -4,7 +4,7 @@
 
 ### Directory Structure
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Document Structure](./readmd.md) | [Next Section:IMUL >>](./imul.md)**
 

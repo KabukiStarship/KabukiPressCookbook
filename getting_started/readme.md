@@ -2,6 +2,8 @@
 
 ## [Overview](./readme.md)
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 This book details how to write portable software and perform Issue Driven Development in Modern Embedded-C++ with Kabuki Toolkit (KT) and Script2. The audience of this book is intermediate to expert programmers, though beginning C++ programmers may still find the book useful and will teach you Modern Embedded-C++ the right way. You would want to read this book if you're trying to learn Kabuki Toolkit or Script2, or if you are interested on how to build Modern Embedded C++ SDKs.
 
 Serial Chinese Room, Interprocess, and Telemetry (**SCRIPT**) Script (**Script2**) is an implementation of the SCRIPT Specification, which defines the Automaton Standard Code for Information Interchange (ASCII) Data Structures. ASCII Data Structures are a set of contiguous data structures that assist in interprocess communication and data serialization and marshalling.

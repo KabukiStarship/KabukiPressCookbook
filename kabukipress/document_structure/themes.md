@@ -4,7 +4,7 @@
 
 ### Themes
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Permalinks](./permalinks.md) | [Next Section:Pagination >>](./pagination.md)**
 

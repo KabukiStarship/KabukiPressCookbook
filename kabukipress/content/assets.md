@@ -4,7 +4,7 @@
 
 ### Assets
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Data Files](./data_files.md) | [Next Section:Static Files >>](./static_files.md)**
 

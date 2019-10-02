@@ -4,7 +4,7 @@
 
 ### Static Files
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Assets](./assets.md) | [Next Chapter:Document Structure >>](../document_structure/readme.md)**
 

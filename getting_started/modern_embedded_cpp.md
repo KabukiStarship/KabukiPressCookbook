@@ -4,6 +4,8 @@
 
 ### Modern Embedded-C++
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 Modern Embedded-C++ (ME-C++) is similar to Modern-C++ only there are some extra rules for dealing with memory constrained systems. Some of the most important characteristics of ME-C++ are:
 
 1. Minimization of RAM and ROM use with the ability to scale up to desktop RAM and ROM usage. **✓**

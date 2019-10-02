@@ -4,7 +4,7 @@
 
 ### Managing Plugins
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Creating a Plugin](./creating_a_plugin.md) | Next Section:None >>**
 

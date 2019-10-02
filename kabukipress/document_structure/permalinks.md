@@ -4,7 +4,7 @@
 
 ### Permalinks
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Layouts](./layouts.md) | [Next Section:Themes >>](./themes.md)**
 

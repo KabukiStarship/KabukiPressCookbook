@@ -4,6 +4,8 @@
 
 ### Philosophical Background
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 The bedrock of Scripts and Kabuki Toolkit are AI philosophy concepts of the Chinese Room and Kabuki Theater theory of consciousness. Having some knowledge of these theories are essential for continuing in AI.
 
 #### Kabuki Theater Theory of Consciousness

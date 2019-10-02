@@ -4,6 +4,8 @@
 
 ### Build-time Optimizations
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
+
 In C++ there are some language features that are very powerful, but slow down the compiler a lot. Script2 reduces build-time through the use of 3-file Translation Unit with unique Translation Unit names and wrapper classes to hide the templates and allow you to include smaller .
 
 #### Unique Translation Unit Names

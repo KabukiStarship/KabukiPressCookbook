@@ -4,7 +4,7 @@
 
 ### Creating a Plugin
 
-
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
 **[<< Previous Section:Plugins](./readme.md) | [Next Section:Managing Plugins >>](./managing_plugins.md)**
 
