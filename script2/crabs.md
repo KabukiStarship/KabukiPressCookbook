@@ -1,12 +1,20 @@
-# [KabukiPress Cookbook](../../readme.md)
+# [KabukiPress Cookbook](../readme.md)
 
-## [Script2](../readme.md)
+## [Script2](./readme.md)
 
-### [Testing](./readme.md)
+### Crabs
 
-#### Mocking
+```AsciiArt
+ ██████╗██████╗  █████╗ ██████╗ ███████╗
+██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██║     ██████╔╝███████║██████╔╝███████╗
+██║     ██╔══██╗██╔══██║██╔══██╗╚════██║
+╚██████╗██║  ██║██║  ██║██████╔╝███████║
+ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+```
 
-This is a stub.
+
+**[<< Previous Section:Summary](./summary.md) | [Next Section:Script2 >>](../script2/readme.md)**
 
 ## License
 
