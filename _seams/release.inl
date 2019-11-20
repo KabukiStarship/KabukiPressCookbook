@@ -20,7 +20,7 @@ using namespace _;
 
 namespace astartup {
 namespace cookbook {
-inline const CH1* Release(CH1* seam_log, CH1* seam_end, const CH1* args) {
+inline const CHA* Release(CHA* seam_log, CHA* seam_end, const CHA* args) {
 #if SEAM >= ASTARTUP_COOKBOOK_RELEASE
   TEST_BEGIN;
 
