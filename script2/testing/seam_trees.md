@@ -24,9 +24,9 @@ A seam, as the name implies, is similar to a seam in clothing where pieces of cl
 
 #### Seam Tree Headers
 
-Script2 compiles rapidly and does not require use of precompiled libraries, but we still use the Microsoft standard `pch.h`. At the top of the precompiled header there is an include for th `pch_header.h` file, `.inl` meaning inline header file. Inline headers are used when you expect to define macros and then include a file below said macros where you are essentially passing the macros in like function parameters. For example, in the `.pch` file below the `pch_header.h` file is included at the top, some macros are configured such as `#define USING_UTF32 YES`, and then below that we `#include "pch_footer.inl"`, and the `USING_UTF32` then gets used in the `pch_footer.inl` to configure the default Unicode format. For a full list of th macros you can override, just look in `pch_footer.inl`.
+Script2™ compiles rapidly and does not require use of precompiled libraries, but we still use the Microsoft standard `pch.h`. At the top of the precompiled header there is an include for th `pch_header.h` file, `.inl` meaning inline header file. Inline headers are used when you expect to define macros and then include a file below said macros where you are essentially passing the macros in like function parameters. For example, in the `.pch` file below the `pch_header.h` file is included at the top, some macros are configured such as `#define USING_UTF32 YES`, and then below that we `#include "pch_footer.inl"`, and the `USING_UTF32` then gets used in the `pch_footer.inl` to configure the default Unicode format. For a full list of th macros you can override, just look in `pch_footer.inl`.
 
-In C++ the default behavior is for a macro that does not exist to be lazily evaluated as 0 and in Script2 the value of `YES` is 0, so any non-defined macro when compared `== YES` will evaluate as true. This design allows the behavior to be on be default and you turn them off in the `pch.h` file; similarly the `CPU_64_BIT` and `CPU_WORD_SIZE` macros are both 0 so everything is configured for a 64-bit CPU by default.
+In C++ the default behavior is for a macro that does not exist to be lazily evaluated as 0 and in Script2™ the value of `YES` is 0, so any non-defined macro when compared `== YES` will evaluate as true. This design allows the behavior to be on be default and you turn them off in the `pch.h` file; similarly the `CPU_64_BIT` and `CPU_WORD_SIZE` macros are both 0 so everything is configured for a 64-bit CPU by default.
 
 ***`pch.h`***
 
@@ -37,7 +37,7 @@ In C++ the default behavior is for a macro that does not exist to be lazily eval
 #define PRECOMPILED_HEADER 1
 #include "pch_header.h"
 
-#define SEAM SEAM_SCRIPT2_TABLE
+#define SEAM SEAM_Script2™_TABLE
 
 #define CPU_WORD_SIZE CPU_64_BIT
 #define CPU_ENDIAN LITTLE_ENDIAN
@@ -65,33 +65,33 @@ The `module_seams.inl` file is where the seams get enumerated. These Macros get 
 ***`module_seams.inl`***
 
 ```C++
-#ifndef SCRIPT2_MODULE_SEAMS
-#define SCRIPT2_MODULE_SEAMS
+#ifndef Script2™_MODULE_SEAMS
+#define Script2™_MODULE_SEAMS
 
-#define SCRIPT2_UNIPRINTER 0
-#define SCRIPT2_RNG 1
-#define SCRIPT2_ITOS 2
-#define SCRIPT2_FTOS 3
-#define SCRIPT2_SPRINTER 4
-#define SCRIPT2_CLOCK 5
-#define SCRIPT2_STACK 6
-#define SCRIPT2_MATRIX 7
-#define SCRIPT2_STRAND 8
-#define SCRIPT2_LOOM 9
-#define SCRIPT2_LIST 10
-#define SCRIPT2_BOOK 11
-#define SCRIPT2_MAP 12
-#define SCRIPT2_TABLE 13
-#define SCRIPT2_DICTIONARY 14
-#define SCRIPT2_EXPR 15
-#define SCRIPT2_DOOR 16
-#define SCRIPT2_ROOM 17
+#define Script2™_UNIPRINTER 0
+#define Script2™_RNG 1
+#define Script2™_ITOS 2
+#define Script2™_FTOS 3
+#define Script2™_SPRINTER 4
+#define Script2™_CLOCK 5
+#define Script2™_STACK 6
+#define Script2™_MATRIX 7
+#define Script2™_STRAND 8
+#define Script2™_LOOM 9
+#define Script2™_LIST 10
+#define Script2™_BOOK 11
+#define Script2™_MAP 12
+#define Script2™_TABLE 13
+#define Script2™_DICTIONARY 14
+#define Script2™_EXPR 15
+#define Script2™_DOOR 16
+#define Script2™_ROOM 17
 #define SEAM_N 18
 
 #endif
 ```
 
-When we want to switch seams, now all we have to do `#define SEAM` to the seam we want, for example `#define SEAM SEAM_SCRIPT2_ROOM`. When you design your Seam tree macros, you might want to make them easier to popup with autocomplete or Intellisense.
+When we want to switch seams, now all we have to do `#define SEAM` to the seam we want, for example `#define SEAM SEAM_Script2™_ROOM`. When you design your Seam tree macros, you might want to make them easier to popup with autocomplete or Intellisense.
 
 #### Global and Module Configuration
 
@@ -101,7 +101,7 @@ The `global.h` file contains `#include` references for all of the module's publi
 
 #### Build-time Optimizations
 
-In C++ there are some language features that are very powerful, but slow down the compiler a lot. Script2 Build-time optimizations are the 3-file Translation Unit with unique Translation Unit names.
+In C++ there are some language features that are very powerful, but slow down the compiler a lot. Script2™ Build-time optimizations are the 3-file Translation Unit with unique Translation Unit names.
 
 ##### Unique Translation Unit Names
 
@@ -111,7 +111,7 @@ C++ compilers support partial classes; meaning that you can split up an object's
 
 For each implementation file compiled, the compiler generates a translation unit (TU or TUs) which then get linked together during the link stage. This TU is given the file's name. The compiler will use a hash table of TUs to check if the implementation was split between multiple TUs and if there are multiple translation units with the same name the compiler must check which TU to add the code to. Hash table collisions are very time consuming to resolve leading to longer build time. For this reason implementation files should have unique filenames in order to reduce unneeded hash table collision resolutions.
 
-Script2 Compliant software have unique implementation filenames named after the namespace name in modulename_translation format, where all modulename(s) are unique.
+Script2™ Compliant software have unique implementation filenames named after the namespace name in modulename_translation format, where all modulename(s) are unique.
 
 ***Example `c_foo.h`***
 
@@ -130,7 +130,7 @@ Filename is `foo_bar_go.cc`.
 
 #### Usage of Asserts
 
-Usage of assert statements in Script2 can be used for only the development phase as a form of training wheels, and when the wheels are taken off, you should be able to ride the bike without falling, or the training wheels can stay on. One major benefit of using Script2 ASSERT, AVOW,
+Usage of assert statements in Script2™ can be used for only the development phase as a form of training wheels, and when the wheels are taken off, you should be able to ride the bike without falling, or the training wheels can stay on. One major benefit of using Script2™ ASSERT, AVOW,
 
 Occasionally there will be an environmental hazard when you're riding that causes you to fall off the bike, such as ice or a bad curve. You can have to options, you can either ride with training wheels your entire life, slowing you down, or you can put up with the occasional fall by riding without the them and not be slowed down. This depends on the application. Some applications require minimized ROM footprint. In these circumstances, you may want to make assert statements only during debug phase and run without the training wheels because it doesn't matter if it messes up in operation because of another recover mechanism; or you don't care if you ride with the training wheels on because you're not going fast and you just need to never fall down. That is the design of the assert system in KT. The key edge case to keep in mind is the bit flip, which will be the most common non-critical bug; if the system is crashing for anything other than a bit flip then you have other problems. The chance of a bit flip is very low, but the chance of a bit flip causing a null pointer substantially lower, only N/(2^N), where N is the number of bits in a word. Null pointers an excellent example of training wheels that can generally be taken off after the system is working.
 
@@ -142,17 +142,17 @@ A *C Application Binary Interface* (*CABI* or *Cabi*) helps with the creation of
 
 This rule is different than the style guide for templates because the style guide dictates how the code will be formatted, but the rules in this section dictates the structure of how the templates are programmed.
 
-C++ Templates can not be precompiled into header files and may create duplicate copies of static data in the library assembly and the executable assembly. The only way to get around this is to not put templates the precompiled library header files. Script2 Compliant Software may use templates, but provide a header file without templates that contains wrapper functions for instances of specialized templates.
+C++ Templates can not be precompiled into header files and may create duplicate copies of static data in the library assembly and the executable assembly. The only way to get around this is to not put templates the precompiled library header files. Script2™ Compliant Software may use templates, but provide a header file without templates that contains wrapper functions for instances of specialized templates.
 
 #### Integer Not-a-Numbers
 
-Script2 handles numbers as is specified in the SCRIPT specification, which can be found at:
+Script2™ handles numbers as is specified in the SCRIPT specification, which can be found at:
 
 [https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers)
 
 ##### Not-a-number
 
-Script2 uses the highest possible unsigned integer, `0b'1...1`, and the lowest possible signed number, `0b'10...0`, to represent not-a-number (*NaN*).
+Script2™ uses the highest possible unsigned integer, `0b'1...1`, and the lowest possible signed number, `0b'10...0`, to represent not-a-number (*NaN*).
 
 ##### Upper and Lower bounds
 
@@ -160,19 +160,19 @@ The default upper and lower bounds is dictate by the most significant bit that i
 
 #### Year 2038 Epoch Handling
 
-Script2 software is handles the Year 2038 time epoch, the year when 32-bit signed integer timestamps cycle max out. One property to be aware of about signed versus unsigned handling of numbers is that unsigned numbers are designed to cycle from the max value, 2^n-1, where n is the number of bits, back to 0. With signed numbers this is not the case.
+Script2™ software is handles the Year 2038 time epoch, the year when 32-bit signed integer timestamps cycle max out. One property to be aware of about signed versus unsigned handling of numbers is that unsigned numbers are designed to cycle from the max value, 2^n-1, where n is the number of bits, back to 0. With signed numbers this is not the case.
 
 #### Template Hiding and Pre-Hungarian Notation
 
-In order to hide some templates, it is required to use post-Hungarian notation. Script2 uses the ASCII Data Types for Hungarian notation (**@see** SCRIPT Specification).
+In order to hide some templates, it is required to use post-Hungarian notation. Script2™ uses the ASCII Data Types for Hungarian notation (**@see** SCRIPT Specification).
 
 ```C++
 template<Typename T>
 T GetSomething () { return 0; }
 
 // Public interface
-UI1 GetSomethingUI1 () { return 0; }
-FP4 GetSomethingFP4 () { return 0.0f; }
+IUA GetSomethingUI1 () { return 0; }
+FPC GetSomethingFP4 () { return 0.0f; }
 ```
 
 ### Seam Gerrymandering
@@ -187,6 +187,6 @@ Your primary inspiration to not Gerrymander seams is that you want to get your c
 
 ## License
 
-Copyright 2018-9 (C) [Kabuki Starship](https://kabukistarship.com); all rights reserved (R).
+Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
 
 This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is published under a generic non-commercial open-source license, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

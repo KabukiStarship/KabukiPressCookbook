@@ -8,7 +8,7 @@
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-In the following overview of the **Chinese Room Thought Experiment** (**CRTE**), when you read a word in UpperCamelCase that word is a Chinese Room keyword and also the name of the corresponding object class in the Script2 Specification.
+In the following overview of the **Chinese Room Thought Experiment** (**CRTE**), when you read a word in UpperCamelCase that word is a Chinese Room keyword and also the name of the corresponding object class in the Script2™ Specification.
 
 A Chinese Room is a theoretical analog computer built from a normal room in a building with standard non-computer office equipment and person in the room that operates a pen and paper computer that when speed up to a human time scale can pass the Turning Test by fluently conversing in any language. The room includes Desks, tables, Books, Filing cabinets, Maps, Stacks, Looms, and Arrays, and other Programmable Object Types. There are no rules that prohibit computerized office equipment in the room but the thought experiment is premised on analog operation of the pen and paper computer. Unique to Crabs there is also a Loom, which is an array of strings like the ones used to make cloth, in the room that is used to hold strings.
 
@@ -16,7 +16,7 @@ In order to talk to the Chinese Room, one would write a message on a piece of pa
 
 This pen-and-paper computer process is speed up through some magic Time Machine that allows the Chinese Room to operate on Human time scales so that the Room can return an answer in fluent Chinese or other language. The question posed at this point is that since the Room can speak fluently in any language and one can't tell if it's a human or computer, is the Room intelligent and conscious like a human? It's just an office and the person in the Room is conscious but the Room is not.
 
-The next level of the CRTE is what then if you create a network of a building full of Chinese Rooms with a sophisticated Messaging system. Is this **Script2 Network** then a strong AI, i.e. conscious human-like entity?
+The next level of the CRTE is what then if you create a network of a building full of Chinese Rooms with a sophisticated Messaging system. Is this **Script2™ Network** then a strong AI, i.e. conscious human-like entity?
 
 The next level of the CRTE is to then to turn every Room in the world into a Chinese Room and create an Internet of Things (IoT). Is this internet then Strong AI?
 
@@ -24,12 +24,12 @@ The final level of the CRTE is where you put the CRI on top of an Android that l
 
 Every Roombot is connected through the Internet using Serial Chinese Room Interprocess, and Telemetry Protocol to form the Intergalactic Council of Artificial and Natural Neural Nets (ICAN3).
 
-Now you know why Cale built the Chinese Room; because we must know: at what point does a Script2 Network become conscious?
+Now you know why Cale built the Chinese Room; because we must know: at what point does a Script2™ Network become conscious?
 
 **[<< Previous Section:Philosophical Background](./readme.md) | [Next Section:Seam Trees >>](./kabuki_theather_theory_of_consiousness.md)**
 
 ## License
 
-Copyright 2018-9 (C) [Kabuki Starship](https://kabukistarship.com); all rights reserved (R).
+Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
 
 This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is subject to the terms of the Kabuki Strong Source-available License, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
