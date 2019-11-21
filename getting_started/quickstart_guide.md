@@ -14,7 +14,7 @@ __  / / /  / / /_  /_  ___/_  //_/   __  ___/  __/  __ `/_  ___/  __/
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**1.** copy a console pointed at your workspace folder. If you are creating one, it is advised to use `C:\workspace` to preserve absolute filenames:
+**1.** Open a console pointed at your workspace folder. If you are creating one, it is advised to use `C:\workspace` to preserve absolute filenames:
 
 ```Console
 cd C:
@@ -23,24 +23,32 @@ cd workspace
 mkdir kabuki-starship
 cd kabuki-starship
 git clone https://github.com/kabuki-starship/kabuki.toolkit.git
-git clone https://github.com/kabuki-starship/Script2™.git
+git clone https://github.com/kabuki-starship/script2.git
 ```
 
-**2.** Open the `kabuki.toolkit.sln` Visual Studio Project and inspect how the projects are laid out.
+**2.** Clone the Script2 Bootstrap:
 
-**3.** To add KT to your project, you don't need to build a library because we use an method to dramatically reduce compile time called a Library translation unit. Rather than have `.cpp` files, we put the implementation in inline headers and you include them in your project in a separate translation unit. Create a file named `library.cpp` and in that file add the line:
+```BASH
+git clone https://github.com/kabuki-packages/script2.bootstrap
+```
+
+**3.** Open the `__script2.bootstrap.sln` Visual Studio Solution file. If you do not already have Visual Studio installed you can download it for free at <https://visualstudio.com>.
+
+**4.** To add KT to your project, you don't need to build a library because we use a method to dramatically reduce compile time called a Library translation unit. Rather than have `.cpp` files, we put the implementation in inline headers and you include them in your project in a separate translation unit. The dedicates a single CPU core to compiling each library. Create a file named `library.cpp` and in that file add the line:
 
 ```C++
 #include <kabuki.toolkit/module.inl>
 ```
 
-**4.** In order to save the stack debug data when an D_ASSERT occurs, set breakpoint in the file `Script2™_test.cc` at the return line for:
+**5.** In order to save the stack debug data when a D_ASSERT (Debug assert) occurs, set a breakpoint in the file `<script2/test.inl>` at the return line for:
 
 ```C++
 BOL TestWarn(const CHA* function, const CHA* file, ISC line);
 ```
 
-**[<< Previous Section: Getting Started](./readme.md) | [Next Section: Modern Embedded-C++ >>](./modern_embedded-cpp.md)**
+**6.** Compile the bootstrap and run, and read the following chapters for any unanswered questions.
+
+**[<< Previous Section: Getting Started Overview](./readme.md) | [Next Section: Modern Embedded-C++ >>](./modern_embedded-cpp.md)**
 
 ## License
 
