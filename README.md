@@ -28,7 +28,6 @@ By Cale McCollough
    1. [Quickstart Guide](./getting_started/quickstart_guide)
    1. [Modern Embedded-C++](./getting_started/modern_embedded-cpp)
    1. [Organization and Build System](./getting_started/organization_and_build_system)
-   1. [Summary](./getting_started/summary)
    1. [Exercises](./getting_started/exercises)
 1. [Script2](./script2/)
    1. [Testing](./testing)
