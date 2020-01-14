@@ -1,4 +1,4 @@
-# [KabukiPress Cookbook](../readme.md)
+# [KabukiPress Cookbook](../)
 
 ## Script2
 
@@ -29,10 +29,10 @@ Script2 uses a seam-oriented approach that allows you to break your software up 
 The Automaton Standard Code for information Interchange (ASCII) Data Types are a set of POD and complex data structures that can define most commonly-used computerized data. ASCII Data Types support all of the C++ data types, UTF-8, UTF-16, and MSB Variant Encoding, 8, 16, 32, 64, 128, 256, 512, 1024, 1024, 4096, and 4096, and 8192-bit signed and unsigned integers, 16, 32, 64, and 128-bit floating-point numbers, and a set of map data structures that use contiguous memory. The use of contiguous memory is very useful for interprocess communication and network apps. The data structures work as inter-process pointers that allows multiple processors to communicate and to perform reflections.
 
 
-**[<< Previous Section: Getting Started Summary](./summary.md) | [Next Section:Script2 >>](../Script2/readme.md)**
+**[<< Previous Section: Getting Started Summary](./summary) | [Next Section:Script2 >>](../Script2/)**
 
 ## License
 
-Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
+Copyright 2018-20 © [Kabuki Starship™](https://kabukistarship.com).
 
 This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is subject to the terms of the Kabuki Strong Source-available License, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

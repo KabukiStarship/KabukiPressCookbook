@@ -17,7 +17,7 @@
                `.__,  `._.'  `._.' /  \_ `___,'  `._.'  `._.' /  \_
 ```
 
-***A book on how to make intelligent connected software, websites, books, and art with Script2™, Kabuki Toolkit™, KabukiDB™,, and KabukiPress™.***
+***A book on Modern Embedded-C++, Script2 and I am You Language (IMUL) with Kabuki Toolkit.***
 
 By Cale McCollough
 
@@ -34,7 +34,8 @@ By Cale McCollough
    1. [Testing](./testing)
       1. [Seam Trees](./script2/testing/seam_trees)
       1. [Test Driven Development](./script2/testing/tdd)
-   1. [String Processing](./script2/strings)
+   1. [Strings](./script2/strings)
+   1. [ASCII Data](./ascii_data)
    1. [Crabs](./crabs)
 1. [Kabuki Toolkit](./kt)
    1. [Multi-user Systems](./kt/multi-user_systems)
@@ -73,6 +74,6 @@ By Cale McCollough
 
 ## License
 
-Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
+Copyright 2018-20 © [Kabuki Starship™](https://kabukistarship.com).
 
 This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is subject to the terms of the Kabuki Strong Source-available License, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

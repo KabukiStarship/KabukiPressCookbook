@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../readme.md)
+# [KabukiPress Cookbook](../)
 
-## [Introduction](./readme.md)
+## [Introduction](./)
 
 ### Organization and Build System
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-The core of the Kabuki Starship™ is the [**S**erial **C**hinese **R**oom, **I**nterprocess, and **T**elemetry (SCRIPT) Specification and Script2™](../Script2™). Scirpt2 is designed to be the core for both Software and Firmware development kits, which is why it is called a nanoframework. [Kabuki Toolkit™ (KT)](../kt/readme.md) is a Software Development Kit that adds tools to make portable apps web servers. Projects are typically broken up into a Service, a Client app, a Website, and a Cookbook.
+The core of the Kabuki Starship™ is the [**S**erial **C**hinese **R**oom, **I**nterprocess, and **T**elemetry (SCRIPT) Specification and Script2™](../Script2™). Scirpt2 is designed to be the core for both Software and Firmware development kits, which is why it is called a nanoframework. [Kabuki Toolkit™ (KT)](../kt/) is a Software Development Kit that adds tools to make portable apps web servers. Projects are typically broken up into a Service, a Client app, a Website, and a Cookbook.
 
 ![Example project organization for a Kabuki Service.](./kabuki.press.package.png)
 
@@ -30,13 +30,13 @@ The most basic file structure possible is the Script2™ Bootstrap project that 
     * `_undef.inl` - This file `#undef`the macros created in `_debug.inl` and `_release.inl`
     * `00.core.inl` - The unit test boilerplate code requires at least one software seam and you can rename this file to whatever you want.
     * `CMakeLists.txt` - This file builds `_main.cpp`.
-    * `readme.md` - Every folder has a readme.md file in it because it is **EXTREMELY** useful.
+    * `` - Every folder has a  file in it because it is **EXTREMELY** useful.
 * `_impl.inl` - This file `#includes` all of the `.inl` inline implementation files into one translation unit.
 
-**[<< Previous Section: Modern Embedded-C++](./modern_embedded_cpp.md) | [Next Section: Summary >>](../summary.md)**
+**[<< Previous Section: Modern Embedded-C++](./modern_embedded_cpp) | [Next Section: Summary >>](../summary)**
 
 ## License
 
-Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
+Copyright 2018-20 © [Kabuki Starship™](https://kabukistarship.com).
 
-This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is published under a generic non-commercial open-source license, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+This source code form is an open-source document, the Writings and Discoveries, that was written by and contains intellectual property. The Writings and Discoveries consist of documents, files, source code, technology design files, art, trademarks, and other content contained this file, folder and the GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>. The Writings and Discoveries are published under the Kabuki Strong Source-available License, the License, which is a non-commercial open-source license and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Writings and Discoveries so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Writings and Discoveries. You may not sell the Writings and Discoveries or otherwise profit from derivative works created from the Writings and Discoveries without the expressed written permission of the copyright holder. Unless required by applicable law or agreed to in writing, the Writings and Discoveries distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.

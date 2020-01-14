@@ -1,8 +1,8 @@
-# [KabukiPress Cookbook](../readme.md)
+# [KabukiPress Cookbook](../)
 
-## [Unit Testing](./readme.md)
+## [Unit Testing](./)
 
-### [Seam Trees](./readme.md)
+### [Seam Trees](./)
 
 ```AsciiArt
   ██████ ▓█████ ▄▄▄       ███▄ ▄███▓   ▄▄▄█████▓ ██▀███  ▓█████ ▓█████   ██████
@@ -148,7 +148,7 @@ C++ Templates can not be precompiled into header files and may create duplicate 
 
 Script2™ handles numbers as is specified in the SCRIPT specification, which can be found at:
 
-[https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc.md#22-integers)
+[https://github.com/kabuki-starship/script/blob/master/script_specification_rfc#22-integers](https://github.com/kabuki-starship/script/blob/master/script_specification_rfc#22-integers)
 
 ##### Not-a-number
 
@@ -183,10 +183,10 @@ Seam Gerrymandering is, as the name implies, very similar to political district 
 
 Your primary inspiration to not Gerrymander seams is that you want to get your commit count as high as possible as quickly as possible so it's best to make small scrums and to keep a moderate backflow of very small tasks to do when you have some extra time.
 
-**[<< Previous Section:Overview](./readme.md) | [Next Section:Mocking >>](./mocking.md)**
+**[<< Previous Section:Overview](./) | [Next Section:Mocking >>](./mocking)**
 
 ## License
 
-Copyright 2018-9 © [Kabuki Starship™](https://kabukistarship.com); all rights reserved.
+Copyright 2018-20 © [Kabuki Starship™](https://kabukistarship.com).
 
-This is an open-source document, the Document, that was written by and contains intellectual property. The Document consists of documents, files, source code, technology design files, art, and other content contained this file, folder and markdown.cookbook GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>, the Repository. The Document is published under a generic non-commercial open-source license, the License, and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Document so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Document. You may not sell the Document or otherwise profit from derivative works created from the Document without the expressed written permission of Your Name. Unless required by applicable law or agreed to in writing, the Document distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+This source code form is an open-source document, the Writings and Discoveries, that was written by and contains intellectual property. The Writings and Discoveries consist of documents, files, source code, technology design files, art, trademarks, and other content contained this file, folder and the GitHub repository located at <https://github.com/kabuki-starship/kabuki.press.cookbook>. The Writings and Discoveries are published under the Kabuki Strong Source-available License, the License, which is a non-commercial open-source license and is for educational and demonstration purposes only. You may use, reproduce, publicly display, and modify the Writings and Discoveries so long as you submit and donate fixes and derived intellectual property, the Donated Ideas, to the Repository as an Issue ticket to become part of the Writings and Discoveries. You may not sell the Writings and Discoveries or otherwise profit from derivative works created from the Writings and Discoveries without the expressed written permission of the copyright holder. Unless required by applicable law or agreed to in writing, the Writings and Discoveries distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
