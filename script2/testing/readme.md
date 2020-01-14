@@ -1,16 +1,12 @@
-# Feature Request
+# [KabukiPress Cookbook](../)
 
-## Problem
+## [Script2™](../)
 
+### Testing
 
+[Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-## Solution
-
-
-
-## Hierarchy
-
-* Flat
+**[<< Previous Section:](./) | [Next Section: >>](./)**
 
 ## License
 
