@@ -2,23 +2,21 @@
 
 ## [Script2™](../readme.md)
 
-### String Processing
+### Uniprinter
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-#### Uniprinter
-
 KT uses a ultra-fast text printing framework designed to work similar to the C++ `std::cout` and provide the formatting functionality to `printf` using some utility classes. The most noticeable difference between the operation of the two are that the Uniprinter uses a pointer to the first and last Unicode character in a buffer.
 
-##### Contiguous Text
+#### Contiguous Text
 
 Contiguous text is text in a buffer doesn't have any gaps in the memory. The Crabs text system is designed to work with plain-old-C strings on the stack, `std::string`, and to integrate into other applications and languages using C bindings. Text is written using the Printer class, and is scanned from the Scanner class.
 
-##### Printer
+#### Printer
 
 The Printer is a utility for printing UTF-8, UTF-16, and UTF-32 strings. The class stores 2 pointers, the end of buffer pointer and the cursor. The cursor is required to always point at a location in memory that you can write a nil-term char (i.e. a zero). The Printer class uses the Print functions and the overloaded `operator<<` similar to `std::cout`.
 
-##### Printer Example
+#### Printer Example
 
 ```C++
 #include <kabuki/crabs/tutf.h>
@@ -37,7 +35,7 @@ Testing 1 , 2,    3 1111011 2D
 ----------
 ```
 
-##### Template Optimizations for UTF-16 and UTF-32
+#### Template Optimizations for UTF-16 and UTF-32
 
 The usage of C++ templates in headers prevents the system from being able to precompile code, dramatically increasing compile time. The solution is to place all templates in one header, and to create template specializations for the common types using inline wrapper functions with implementation in a `.cc` file.
 
@@ -57,7 +55,7 @@ Utf2 print2 (buffer2, kSize);
 print2 << "Testing " << 1 << ", 2, " << '3';
 ```
 
-**[<< Previous Section:Testing.Summary](../testing/summary.md) | [Next Section:Script2™ >>](../Script2™/readme.md)**
+**[<< Previous Section:Testing.Summary](../unit_testing/summary.md) | [Next Section:Script2™ >>](../script2/readme.md)**
 
 ## License
 
