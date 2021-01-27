@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Script2™](./)
+## [Script2](./ReadMe.md)
 
 ### Crabs
 
@@ -15,7 +15,7 @@
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Summary](./summary) | [Next Section:Script2™ >>](../Script2™/)**
+**[<< Previous Section: Summary](./Summary.md) | [Next Section: Script2 >>](../Script2.md)**
 
 ## License
 

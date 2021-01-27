@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Script2](../)
+## [Script2](../ReadMe.md)
 
 ### String Processing
 
@@ -57,7 +57,7 @@ StringB print2 (buffer2, kSize);
 print2 << "Testing " << 1 << ", 2, " << '3';
 ```
 
-**[<< Previous Section: Testing.Summary](../testing/summary) | [Next Section: Script2 >>](../Script2™/)**
+**[<< Previous Section: Summary](../Testing/Summary.md) | [Next Section: Script2 >>](../Script2.md)**
 
 ## License
 

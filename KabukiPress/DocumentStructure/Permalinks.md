@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Document Structure](./)
+## [Document Structure](./ReadMe.md)
 
 ### Permalinks
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Layouts](./layouts) | [Next Section:Themes >>](./themes)**
+**[<< Previous Section: Layouts](./Layouts.md) | [Next Section: Themes >>](./Themes.md)**
 
 ## License
 

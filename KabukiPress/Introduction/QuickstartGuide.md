@@ -1,14 +1,30 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Getting Started](./)
+## [Getting Started](./ReadMe.md)
 
 ### Quickstart Guide
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**1.** Foo
+#### Option A - The Easy Way
 
-**[<< Previous Section:Getting Started](./) | [Next Section:Command Line Usage >>](./command_line_usage)**
+Clone the entire Kabuki Starship open-source workspace.
+
+**1.** `git clone --recursive https://github.com/KabukiStarship/KabukiStarship.git`
+
+#### Option B - Clone only the KabukiPress repos
+
+**1.** `git clone https://github.com/KabukiStarship/KabukiStarship.git`
+
+**2** `cd KabukiStarship`
+
+**3.** `git clone https://github.com/KabukiStarship/Script2.git`
+
+**4.** `git clone https://github.com/KabukiStarship/KabukiToolkit.git`
+
+**5.** `git clone https://github.com/KabukiStarship/KabukiPress.git`
+
+**[<< Previous Section: Getting Started](./ReadMe.md) | [Next Section: Command Line Usage >>](./CommandLineUsage)**
 
 ## License
 

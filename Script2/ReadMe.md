@@ -1,4 +1,4 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
 ## Script2
 
@@ -29,7 +29,7 @@ Script2 uses a seam-oriented approach that allows you to break your software up 
 The Automaton Standard Code for information Interchange (ASCII) Data Types are a set of POD and complex data structures that can define most commonly-used computerized data. ASCII Data Types support all of the C++ data types, UTF-8, UTF-16, and MSB Variant Encoding, 8, 16, 32, 64, 128, 256, 512, 1024, 1024, 4096, and 4096, and 8192-bit signed and unsigned integers, 16, 32, 64, and 128-bit floating-point numbers, and a set of map data structures that use contiguous memory. The use of contiguous memory is very useful for interprocess communication and network apps. The data structures work as inter-process pointers that allows multiple processors to communicate and to perform reflections.
 
 
-**[<< Previous Section: Getting Started Summary](./summary) | [Next Section:Script2 >>](../Script2/)**
+**[<< Previous Section: Summary](./Summary.md) | [Next Section: Script2 >>](../Script2.md)**
 
 ## License
 

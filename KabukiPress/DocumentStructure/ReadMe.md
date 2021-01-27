@@ -1,10 +1,10 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
 ## Document Structure
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Chapter:Content](../content/) | [Next Section:Directory Structure >>](./directory_structure)**
+**[<< Previous Chapter:Content](../Content.md) | [Next Section:Directory Structure >>](./DirectoryStructure.md)**
 
 ## License
 

@@ -1,6 +1,6 @@
-# kabukipress.cookbook._seams
+# KabukiPress Cookbook _Seams
 
-This folder contains the software seams for the [Astartup™ Cookbook](https://github.com/KabukiStarship/KabukiPressCookbook).
+This folder contains the software seams for the [Astartup Cookbook](https://github.com/KabukiStarship/KabukiPressCookbook).
 
 ## License
 

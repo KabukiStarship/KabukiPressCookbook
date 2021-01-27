@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Document Structure](./)
+## [Document Structure](./ReadMe.md)
 
 ### Themes
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Permalinks](./permalinks) | [Next Section:Pagination >>](./pagination)**
+**[<< Previous Section:Permalinks](./Permalinks.md) | [Next Section:Pagination >>](./Pagination.md)**
 
 ## License
 

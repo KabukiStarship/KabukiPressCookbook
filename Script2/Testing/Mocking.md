@@ -1,8 +1,8 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Script2™](../)
+## [Script2](../ReadMe.md)
 
-### [Testing](./)
+### [Testing](./ReadMe.md)
 
 #### Mocking
 

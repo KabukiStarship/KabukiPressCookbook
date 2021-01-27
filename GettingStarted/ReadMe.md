@@ -1,10 +1,10 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Overview](./)
+## [Overview](./ReadMe.md)
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-The KabukiPress Cookbook teaches you how to write portable software in Modern Embedded-C++ with Kabuki Toolkit™ (KT), Script2™, and I am You Language™ (IMUL™).
+The KabukiPress Cookbook teaches you how to write portable software in Modern Embedded-C++ with Kabuki Toolkit (KT), Script2, and I am You Language (IMUL).
 
 The audience of this book is intermediate to expert programmers, though beginning C++ programmers may still find this book useful. You would want to read this book if you're trying to learn Modern Embedded-C++, Script2, IMUL, Kabuki Toolkit, Kabuki DB, or KabukiPress.
 
@@ -14,7 +14,7 @@ This book is organized into one section per product, starting with headless apps
 
 In order to be successful in this class, it is recommended to play the videos at double speed but pause frequently. The reason for this is that it trains your brain to think as quickly as you can type.
 
-**[<< Previous Section: Content Table](../) | [Next Section: Quickstart Guide >>](./quickstart_guide)**
+**[<< Previous Section: Content Table](../ReadMe.md) | [Next Section: Quickstart Guide >>](./QuickstartGuide.md)**
 
 ## License
 

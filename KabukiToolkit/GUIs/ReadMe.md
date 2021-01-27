@@ -1,10 +1,10 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Graphical User Interfaces](./)
+## [Graphical User Interfaces](./ReadMe.md)
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:](./) | [Next Section: >>](./)**
+**[<< Previous Section:](./ReadMe.md) | [Next Section: >>](./ReadMe.md)**
 
 ## License
 

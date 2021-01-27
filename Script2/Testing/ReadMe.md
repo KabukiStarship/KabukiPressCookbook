@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Script2™](../)
+## [Script2](../ReadMe.md)
 
 ### Testing
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:](./) | [Next Section: >>](./)**
+**[<< Previous Section:](./ReadMe.md) | [Next Section: >>](./ReadMe.md)**
 
 ## License
 

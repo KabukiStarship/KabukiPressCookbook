@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Content](./)
+## [Content](./ReadMe.md)
 
 ### Assets
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Data Files](./data_files) | [Next Section:Static Files >>](./static_files)**
+**[<< Previous Section: Data Files](./DataFiles.md) | [Next Section: Static Files >>](./StaticFiles.md)**
 
 ## License
 

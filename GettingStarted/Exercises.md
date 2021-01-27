@@ -1,10 +1,10 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Getting Started](./)
+## [Getting Started](./ReadMe.md)
 
 ### Exercises
 
-**1**.) Explore the Script2 repository and read the SCRIPT Specification RFC at https://github.com/KabukiStarship/script2.
+**1**.) Explore the Script2 repository and read the SCRIPT Specification RFC at https://github.com/KabukiStarship/Script2.
 
 **Optional**.) Print out the `$Script2/docs/script_quick_reference.pdf` and laminate it for quick reference.
 
@@ -18,7 +18,7 @@
 
 **b**.) Choose a project to use as the starting point for your project, copy and paste it into your workspace, rename the project folder and files, and start hacking on your project.
 
-**[<< Previous Section:Summary](./summary) | [Next Section:Script2™ >>](../Script2™/)**
+**[<< Previous Section: Summary](./Summary.md) | [Next Section:Script2 >>](../Script2.md)**
 
 ## License
 
