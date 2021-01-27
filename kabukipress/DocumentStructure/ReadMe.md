@@ -1,12 +1,10 @@
 # [KabukiPress Cookbook](../../)
 
-## [Content](./)
-
-### Collections
+## Document Structure
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Posts](./posts) | [Next Section:Data Files >>](data_files)**
+**[<< Previous Chapter:Content](../content/) | [Next Section:Directory Structure >>](./directory_structure)**
 
 ## License
 

@@ -1,12 +1,12 @@
 # [KabukiPress Cookbook](../../)
 
-## [Content](./)
+## [Getting Started](./)
 
-### Collections
+### Command Line Usage
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Posts](./posts) | [Next Section:Data Files >>](data_files)**
+**[<< Previous Section:Quickstart Guide](./quickstart_gude) | [Next Section:Configuration >>](./configuration)**
 
 ## License
 
