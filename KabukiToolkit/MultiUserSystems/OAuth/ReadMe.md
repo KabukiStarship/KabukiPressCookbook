@@ -1,12 +1,14 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../)
 
-## [Content](./)
+## [Kabuki Toolkit™](../)
 
-### Collections
+### [Multi-user Systems](./)
+
+#### OAuth
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Posts](./posts) | [Next Section:Data Files >>](data_files)**
+**[<< Previous Section:](./) | [Next Section: >>](./)**
 
 ## License
 
