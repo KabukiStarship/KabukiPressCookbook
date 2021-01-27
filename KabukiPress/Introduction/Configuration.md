@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Getting Started](./)
+## [Getting Started](./ReadMe.md)
 
 ### Configuration
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Configuration](./configuration) | [Next Section:Document Structure >>](../document_structure/)**
+**[<< Previous Section: Configuration](./Configuration.md) | [Next Section: Document Structure >>](../DocumentStructure.md)**
 
 ## License
 

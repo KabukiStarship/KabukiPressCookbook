@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Document Structure](./)
+## [Document Structure](./ReadMe.md)
 
 ### Directory Structure
 
@@ -30,7 +30,7 @@ The `_Layouts` folder contains templates for the web page types such as the Defa
 
 The only required layout is the `Default.html` file in the `_Layout` folder and an `_Includes` folder.
 
-**[<< Previous Section:Document Structure](./) | [Next Section: Variables >>](./Variables)**
+**[<< Previous Section:Document Structure](./ReadMe.md) | [Next Section: Variables >>](./Variables.md)**
 
 ## License
 

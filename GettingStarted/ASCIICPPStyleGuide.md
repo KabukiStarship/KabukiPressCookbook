@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Introduction](./)
+## [Introduction](./ReadMe.md)
 
 ### ASCII C++ Style Guide
 
@@ -8,11 +8,11 @@
 
 The ASCII C++ Style Guide is a modified version of the Google C++ Guide that can be found at:
 
-[https://github.com/KabukiStarship/Script2™/tree/master/docs/style_guide/script_style_guide
-](https://github.com/KabukiStarship/Script2™/tree/master/docs/style_guide/script_style_guide
+[https://github.com/KabukiStarship/Script2/tree/master/docs/style_guide/script_style_guide
+](https://github.com/KabukiStarship/Script2/tree/master/docs/style_guide/script_style_guide
 )
 
-Major differences between the Google and Script2™ C++ Style Guides are:
+Major differences between the Google and Script2 C++ Style Guides are:
 
 * Use of ASCII Data Structures.
 * Allowance of all uppercase public member names.
@@ -20,7 +20,7 @@ Major differences between the Google and Script2™ C++ Style Guides are:
 
 The benefit of using the ASCII C++ Style Guide is that it dramatically shrinks the width of your code lines from the use of th 3-letter acronyms, which also greatly improves readability by allowing the user to instantly be able to recognize the type onces accustomed to ASCII Data Types and by removing clutter and maximizing whitespace.
 
-**[<< Overview](./) | [Script2™ >>](../Script2™/)**
+**[<< Overview](./ReadMe.md) | [Script2 >>](../Script2.md)**
 
 ## License
 

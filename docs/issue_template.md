@@ -1,16 +1,18 @@
-# 
-
 ## Problem
 
-
+Describe the problem that you're trying to address.
 
 ## Solution
 
-
+Describe the solution to the problem you're addressing.
 
 ## Hierarchy
 
-* Flat
+* This
+
+## Sessions
+
+* CookingWithCale/CookingWithCale#1
 
 ## License
 

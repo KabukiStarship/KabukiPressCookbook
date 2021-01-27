@@ -1,4 +1,4 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
 ## Appendix
 

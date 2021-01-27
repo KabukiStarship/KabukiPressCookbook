@@ -1,10 +1,10 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
 ## Plugins
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Chapter:Document Structure](../document_structure/) | [Next Section:Creating a Plugin >>](./creating_a_plugin)**
+**[<< Previous Chapter: Document Structure](../DocumentStructure.md) | [Next Section: Creating Plugins >>](./CreatingPlugin.md)**
 
 ## License
 

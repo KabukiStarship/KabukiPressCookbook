@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Introduction](./)
+## [Introduction](./ReadMe.md)
 
 ### Build-time Optimizations
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-In C++ there are some language features that are very powerful, but slow down the compiler a lot. Script2™ reduces build-time through the use of 3-file Translation Unit with unique Translation Unit names and wrapper classes to hide the templates and allow you to include smaller .
+In C++ there are some language features that are very powerful, but slow down the compiler a lot. Script2 reduces build-time through the use of 3-file Translation Unit with unique Translation Unit names and wrapper classes to hide the templates and allow you to include smaller .
 
 #### Unique Translation Unit Names
 
@@ -16,7 +16,7 @@ C++ compilers support partial classes; meaning that you can split up an object's
 
 For each implementation file compiled, the compiler generates a translation unit (TU or TUs) which then get linked together during the link stage. This TU is given the file's name. The compiler will use a hash table of TUs to check if the implementation was split between multiple TUs and if there are multiple translation units with the same name the compiler must check which TU to add the code to. Hash table collisions are very time consuming to resolve leading to longer build time. For this reason implementation files should have unique filenames in order to reduce unneeded hash table collision resolutions.
 
-Script2™ Compliant software have unique implementation filenames named after the namespace name in modulename_translationunitname format, where all modulename(s) are unique.
+Script2 Compliant software have unique implementation filenames named after the namespace name in modulename_translationunitname format, where all modulename(s) are unique.
 
 ***Example***
 

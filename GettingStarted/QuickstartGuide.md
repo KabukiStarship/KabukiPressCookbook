@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Getting Started](./)
+## [Getting Started](./ReadMe.md)
 
 ### Quick Start Guide
 
@@ -48,7 +48,7 @@ BOL TestWarn(const CHA* function, const CHA* file, ISC line);
 
 **6.** Compile the bootstrap and run, and read the following chapters for any unanswered questions.
 
-**[<< Previous Section: Getting Started Overview](./) | [Next Section: Modern Embedded-C++ >>](./modern_embedded-cpp)**
+**[<< Previous Section: Getting Started Overview](./ReadMe.md) | [Next Section: Embedded-C++ >>](./EmbeddedCPP.md)**
 
 ## License
 

@@ -1,6 +1,6 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Introduction](./)
+## [Introduction](./ReadMe.md)
 
 ### Modern Embedded-C++
 
@@ -20,7 +20,7 @@ Modern Embedded-C++ (ME-C++) is similar to Modern-C++ only there are some extra 
 1. Code uses structured programming without Software exceptions with the exception of performance critical applications. **✓**
 1. Libraries may integrate `Antiquated-C++`, meaning `C++` code that is not modern, but `Antiquated-C++` is wrapped with `Modern-C++ Adapters` and are segregated from the `Modern-C++` code and marked. **✓**
 
-**[<< Previous Section:Summary](./summary) | [Next Section:Script2™ >>](../Script2™/)**
+**[<< Previous Section: Summary](./Summary.md) | [Next Section: Script2 >>](../Script2.md)**
 
 ## License
 

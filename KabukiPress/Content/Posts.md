@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Content](./)
+## [Content](./ReadMe.md)
 
 ### Posts
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Pages](./pages) | [Next Section: Collections >>](collections)**
+**[<< Previous Section: Pages](./Pages.md) | [Next Section: Collections >>](./Collections.md)**
 
 ## License
 

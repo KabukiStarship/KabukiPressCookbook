@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../../)
+# [KabukiPress Cookbook](../../ReadMe.md)
 
-## [Getting Started](./)
+## [Getting Started](./ReadMe.md)
 
 ### Command Line Usage
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Quickstart Guide](./quickstart_gude) | [Next Section:Configuration >>](./configuration)**
+**[<< Previous Section: Quickstart Guide](./QuickstartGuide.md) | [Next Section: Configuration >>](./Configuration.md)**
 
 ## License
 

@@ -1,6 +1,6 @@
-# [KabukiPress Cookbok](../../)
+# [KabukiPress Cookbok](../../ReadMe.md)
 
-## [KabukiPress](../)
+## [KabukiPress](../ReadMe.md)
 
 ### Introduction
 

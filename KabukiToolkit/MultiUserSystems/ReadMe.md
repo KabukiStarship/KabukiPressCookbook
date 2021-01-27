@@ -1,12 +1,12 @@
-# [KabukiPress Cookbook](../)
+# [KabukiPress Cookbook](../ReadMe.md)
 
-## [Kabuki Toolkit™](../)
+## [Kabuki Toolkit](../ReadMe.md)
 
 ### Multi-user Systems
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:](./) | [Next Section: >>](./)**
+**[<< Previous Section:](./ReadMe.md) | [Next Section: >>](./ReadMe.md)**
 
 ## License
 
