@@ -1,6 +1,24 @@
-# Project Roadmap
+# [KabukiPress Cookbook](../)
 
-Please see the main project repository [](../#Project-Roadmap) for the project roadmap.
+## [Getting Started](./)
+
+### Exercises
+
+**1**.) Explore the Script2 repository and read the SCRIPT Specification RFC at https://github.com/KabukiStarship/script2.
+
+**Optional**.) Print out the `$Script2/docs/script_quick_reference.pdf` and laminate it for quick reference.
+
+**2**.) Read the `$kabuki-toolkit/docs`:
+
+**a**.) Work through the Quickstart Guide in `$kabuki-toolkit/docs/quickstart-guide.`
+
+**3**.) Start your project:
+
+**a**: Look through the `$kabuki-toolkit/projects` folder, open interesting projects, and build them.
+
+**b**.) Choose a project to use as the starting point for your project, copy and paste it into your workspace, rename the project folder and files, and start hacking on your project.
+
+**[<< Previous Section:Summary](./summary) | [Next Section:Script2™ >>](../Script2™/)**
 
 ## License
 

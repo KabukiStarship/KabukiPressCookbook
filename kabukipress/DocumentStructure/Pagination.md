@@ -1,12 +1,10 @@
 # [KabukiPress Cookbook](../../)
 
-## [Content](./)
-
-### Collections
+## Plugins
 
 [Section video tutorial](https://www.youtube.com/channel/UCS2vQG4gUE3vXWV_K9XScQw)
 
-**[<< Previous Section:Posts](./posts) | [Next Section:Data Files >>](data_files)**
+**[<< Previous Chapter:Document Structure](../document_structure/) | [Next Section:Creating a Plugin >>](./creating_a_plugin)**
 
 ## License
 
